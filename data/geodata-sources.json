@@ -1,0 +1,56 @@
+{
+ "format": 1,
+ "note": "Published geographic source data the build reads, fetched by scripts/fetch_geodata.py into work/geodata/ and checked against sha256 and bytes below (recorded 2026-11-01 from the files the v23 build used). Not redistributed; see THIRD_PARTY_NOTICES.md for licences and attribution. The derived caches (eco-grid, strategic-ink, west-real-terrain, patches) are rebuilt from these; their sha256 are in data/map-layout/geodata.json.",
+ "files": {
+  "etopo": {
+   "path": "work/geodata/ETOPO_2022_v1_60s_N90W180_surface.nc",
+   "url": "https://www.ngdc.noaa.gov/thredds/fileServer/global/ETOPO2022/60s/60s_surface_elev_netcdf/ETOPO_2022_v1_60s_N90W180_surface.nc",
+   "bytes": 478290125,
+   "sha256": "74bbc5c23e85188d93f0beba8116babf69e1a8f160e8dc9f053bf8df01b197b6",
+   "dataset": "NOAA NCEI ETOPO 2022 v1, 60 arc-second, surface elevation",
+   "licence": "U.S. Government work (public domain in the U.S.); cite doi:10.25921/fd45-gt74"
+  },
+  "ecoregions": {
+   "path": "work/geodata/Ecoregions2017.zip",
+   "url": "https://storage.googleapis.com/teow2016/Ecoregions2017.zip",
+   "bytes": 149248653,
+   "sha256": "be36d6209e443038d02e309f0447c6e7f2a62f5fe60c605ffe90d064952f2a60",
+   "dataset": "RESOLVE Ecoregions 2017 (Dinerstein et al. 2017)",
+   "licence": "CC BY 4.0; attribution in THIRD_PARTY_NOTICES.md"
+  },
+  "ne_rivers": {
+   "path": "work/geodata/ne_10m_rivers_lake_centerlines.zip",
+   "url": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_rivers_lake_centerlines.zip",
+   "bytes": 2079507,
+   "sha256": "ded71b01870855ccfe19b51f2ec14c9bb48fae23c0e9f3c11974d426433b5c38",
+   "dataset": "Natural Earth 10m rivers and lake centerlines, v5.0.0",
+   "licence": "public domain"
+  },
+  "ne_lakes": {
+   "path": "work/geodata/ne_10m_lakes.zip",
+   "url": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip",
+   "bytes": 2349685,
+   "sha256": "0803a06f9c3cb4671d89b68c48b142aad9366ba40f665245e12a913fbc61722a",
+   "dataset": "Natural Earth 10m lakes, v5.0.0",
+   "licence": "public domain"
+  },
+  "ne_playas": {
+   "path": "work/geodata/ne_10m_playas.zip",
+   "url": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_playas.zip",
+   "bytes": 101634,
+   "sha256": "74e366d0042ecfa742bf787475a78442b44ae554dfcd3366cfa35254959e873c",
+   "dataset": "Natural Earth 10m playas, v5.0.0",
+   "licence": "public domain"
+  },
+  "ne1_relief": {
+   "path": "work/geodata/ne1/NE1_50M_SR_W.zip",
+   "url": "https://naciscdn.org/naturalearth/50m/raster/NE1_50M_SR_W.zip",
+   "bytes": 88413091,
+   "sha256": "9e85417223414bbed425aea5dca0f0b4c5661fc94d4f14494140a21a08dfa450",
+   "dataset": "Natural Earth I 50m shaded relief with water",
+   "licence": "public domain",
+   "optional": "only scripts/compare_natural_earth.py (comparison preview) reads it",
+   "extract_to": "work/geodata/ne1"
+  }
+ }
+}

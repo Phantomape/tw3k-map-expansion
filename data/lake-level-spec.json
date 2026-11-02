@@ -1,0 +1,21 @@
+{
+ "version": 3,
+ "doc": "Per-lake water levels (scripts/lake_level.py, TW3K_LAKE_LEVEL=1). Each lake is found by a seed point (world x, z) in its 3k_main_sea_lake component (or the nearest within seed_search_cells tile cells). Polish (the height bake) solves its level once: the ring_percentile of the original relief on the land within ring_cells tile cells, minus level_below_ring. The waterline is the zero contour of a signed distance (world units) to the lake cells grown by outline_offset and smoothed by outline_smooth; the growth stops at the lake-hex edge where it would enter a building-plot hex and never cuts back into a lake hex (v3). The ground is shaped from it (bank: cap / floor / ring, bed: depth reached floor_at inside), the slope projection is bounded by it (ceil_fraction of the bed depth under the waterline, the bank envelope over it), the water mesh reaches mesh_pad past it at level + SURFACE_MARGIN, and land under the mesh pad stays freeboard over the level. Bank envelope (v3, lake_level.town_envelope): one curve for the bank and the town ground on the water side, max(freeboard, bank cap) out to ring_width, then rising to far_slope over blend_width (the town plateaus further away keep their own level); the town level solve (cluster mix cap, plateau targets, plateau footprint, projection ceiling) reads it from the product. Numbers frozen 2026-10-31 from the vanilla lake study (scratch:vanilla-lake-study/lessons.md): waterline 0.25-0.45 outside the hexes, land +0.1..+0.3 within 0.3-0.6 and <= +0.6 within 3, land slope 0.3-0.8, bed slope 1.5-2.5, floor 0.6-1.2 inside, floor depth 1.0-1.5, mesh pad 0.5-1.0, land under the pad >= +0.05 over the water surface; far_slope = the projection's TOWN_GRADE (1 world per world). The reach (identity check extent) is derived by polish from the cluster mix's input and written to the product; it is not listed here.",
+ "lakes": {
+  "bosten": {
+   "seed_world_xz": [442.5, 812.2],
+   "seed_search_cells": 6,
+   "ring_cells": 6,
+   "ring_percentile": 10,
+   "level_below_ring": 0.12,
+   "freeboard": 0.08,
+   "outline_offset": 0.3,
+   "outline_smooth": 0.4,
+   "window_cells": 40,
+   "bank": {"cap_rise": 0.2, "cap_length": 0.3, "cap_slope": 0.12, "floor_length": 0.4, "ring_width": 3.0, "blend_width": 2.0, "far_slope": 1.0},
+   "bed": {"depth": 1.2, "floor_at": 1.0},
+   "ceil_fraction": 0.5,
+   "mesh_pad": 0.8
+  }
+ }
+}

@@ -1,0 +1,15 @@
+# Local inputs and build products (bring your own game, SDK, tools and data; see BUILD.md)
+/work/*
+!/work/all-directions-30/
+/work/all-directions-30/*
+!/work/all-directions-30/work/
+/work/all-directions-30/work/*
+!/work/all-directions-30/work/current-region-design.json
+!/work/all-directions-30/work/canvas-authored-coordinates.json
+!/work/all-directions-30/work/region-traits.json
+/output/
+/tools/
+/tw3k.local.json
+/reference/
+*.pack
+__pycache__/

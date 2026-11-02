@@ -1,0 +1,75 @@
+{
+ "note": "ground mottle step 1 (criteria f007a596, amendment 2): the v21e stop-loss pack (old recipe, every switch off) outside the rebuilt area (ground-fragmentation-rebuilt.npz). stage_invariants ground_fragmentation fails a landform whose E or n100 there exceeds these by more than tolerance; inside the rebuilt area the stage is compared with its own outside values. Lower only.",
+ "product": {
+  "pack": "v21e stop-loss",
+  "pack_sha256": "6b5a6234512f9fe53f35e5d7ba0572a2e26c7f49c1e3a99bdcff3db9cff5d4d5",
+  "landform_tiles": "scratch:lake-flecks-20261031/ws/analysis/landform-tiles.npz",
+  "landform_tiles_sha256": "ccccdb2a85725d7e90632380a60d7141c536291fa63413eb256b60d31678fb49",
+  "landform_tiles_map_sha256": "73870f09529ace534db60f23778d2abcf2297dcf1330d9efb4d7d1cd4541762f"
+ },
+ "tolerance": 0.01,
+ "metric": {
+  "domw_min": 0.5,
+  "strip": 2048,
+  "min_hex": 50,
+  "tones": "harvest"
+ },
+ "landforms": {
+  "high": {
+   "E": 280.777,
+   "n100": 105.45,
+   "hexes": 9077.2
+  },
+  "plateau": {
+   "E": 172.696,
+   "n100": 78.24,
+   "hexes": 27046.2
+  },
+  "tundra": {
+   "E": 151.905,
+   "n100": 38.86,
+   "hexes": 264877.0
+  },
+  "gobi": {
+   "E": 56.225,
+   "n100": 24.18,
+   "hexes": 270690.5
+  },
+  "drymtn": {
+   "E": 80.3,
+   "n100": 40.44,
+   "hexes": 23997.0
+  },
+  "alpine": {
+   "E": 224.968,
+   "n100": 87.57,
+   "hexes": 13292.8
+  },
+  "erg": {
+   "E": 17.481,
+   "n100": 6.24,
+   "hexes": 65015.8
+  },
+  "alpine_meadow": {
+   "E": 201.036,
+   "n100": 70.79,
+   "hexes": 13193.2
+  },
+  "alpine_steppe": {
+   "E": 89.139,
+   "n100": 39.93,
+   "hexes": 27410.0
+  },
+  "salt_crust": {
+   "E": 34.068,
+   "n100": 15.8,
+   "hexes": 1114.2
+  },
+  "yardang": {
+   "E": 35.763,
+   "n100": 24.6,
+   "hexes": 296.8
+  }
+ },
+ "rebuilt_area_v21e": {}
+}

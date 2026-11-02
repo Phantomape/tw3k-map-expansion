@@ -1,0 +1,5 @@
+{
+ "_note": "Copy to tw3k.local.json (not tracked) and set the paths for this machine; environment variables override. Keys and defaults: scripts/tw3k_paths.py and BUILD.md.",
+ "game_dir": "<Steam library>/steamapps/common/Total War THREE KINGDOMS",
+ "rpfm_cli": "<RPFM folder>/rpfm_cli.exe"
+}

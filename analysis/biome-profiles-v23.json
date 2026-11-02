@@ -1,0 +1,1186 @@
+{
+ "schema": 1,
+ "biome_codes": ["desert", "steppe", "grass", "alpine", "tundra", "snow", "forest", "conifer", "taiga", "temperate", "tropical", "tropical_dry", "savanna", "wetland", "paddy", "mangrove", "other"],
+ "landforms": {
+  "high": {
+   "design": "cold_high",
+   "mix": {"4": 0.58, "5": 0.12, "6": 0.1, "7": 0.12, "22": 0.08},
+   "gain": 1.0,
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "plateau": {
+   "design": "cold_plateau",
+   "mix": {"2": 0.32, "14": 0.1, "21": 0.18, "3": 0.2, "22": 0.06, "7": 0.14},
+   "gain": 0.92,
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "tundra": {
+   "design": "tundra",
+   "mix": {"14": 0.1, "7": 0.3, "22": 0.2, "21": 0.18, "2": 0.14, "5": 0.08},
+   "gain": 0.9,
+   "relief": {
+    "blend": 0.5,
+    "mix": {
+     "valley": {"22": 0.45, "21": 0.3, "7": 0.25},
+     "slope": {"21": 0.4, "7": 0.35, "14": 0.25},
+     "crest": {"2": 0.45, "3": 0.3, "7": 0.25}
+    }
+   },
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "gobi": {
+   "design": "gobi",
+   "mix": {"1": 0.47, "3": 0.2, "2": 0.18, "0": 0.14, "14": 0.01},
+   "gain": 0.88,
+   "relief": {
+    "blend": 0.5,
+    "noise": [40.0, 0.35, 213],
+    "mix": {
+     "valley": {"1": 0.45, "0": 0.25, "2": 0.2, "3": 0.1},
+     "slope": {"3": 0.45, "2": 0.4, "1": 0.15},
+     "crest": {"3": 0.5, "2": 0.45, "14": 0.05}
+    }
+   },
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "drymtn": {
+   "design": "drymtn (+ alpine_dry)",
+   "mix": {"2": 0.36, "3": 0.32, "1": 0.16, "21": 0.12, "14": 0.04},
+   "gain": 0.9,
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "sgravel": {
+   "design": "steppe_gravel",
+   "mix": {"21": 0.4, "22": 0.35, "2": 0.15, "3": 0.1},
+   "gain": 0.45,
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "alpine": {
+   "design": "alpine_wet",
+   "mix": {"4": 0.3, "22": 0.2, "21": 0.16, "7": 0.14, "6": 0.08, "5": 0.06, "20": 0.06},
+   "gain": 0.85,
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "erg": {
+   "design": "erg",
+   "mix": {"0": 0.75, "1": 0.15, "2": 0.1},
+   "gain": 1.0,
+   "relief": {
+    "blend": 0.3,
+    "noise": [30.0, 0.3, 214],
+    "mix": {
+     "valley": {"1": 0.6, "0": 0.3, "2": 0.1},
+     "slope": {"0": 0.85, "1": 0.15},
+     "crest": {"0": 1.0}
+    }
+   },
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "alpine_meadow": {
+   "design": "alpine_meadow",
+   "mix": {"21": 0.3, "22": 0.15, "7": 0.15, "19": 0.15, "14": 0.1, "6": 0.1, "27": 0.05},
+   "gain": 0.9,
+   "relief": {"blend": 0.5, "mix": null},
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "alpine_steppe": {
+   "design": "alpine_steppe",
+   "mix": {"19": 0.35, "2": 0.3, "3": 0.2, "20": 0.1, "21": 0.05},
+   "gain": 0.92,
+   "relief": {
+    "blend": 0.4,
+    "mix": {
+     "valley": {"19": 0.5, "20": 0.3, "21": 0.2},
+     "slope": {"19": 0.5, "2": 0.3, "20": 0.2},
+     "crest": {"2": 0.5, "3": 0.5}
+    }
+   },
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "salt_crust": {
+   "design": "salt_crust",
+   "mix": {"0": 0.75, "1": 0.25},
+   "gain": 1.0,
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  },
+  "yardang": {
+   "design": "yardang",
+   "mix": {"3": 0.5, "2": 0.35, "1": 0.15},
+   "gain": 0.95,
+   "relief": {
+    "blend": 0.5,
+    "mix": {
+     "valley": {"1": 0.7, "2": 0.3},
+     "slope": {"3": 0.5, "2": 0.35, "1": 0.15},
+     "crest": {"3": 0.7, "2": 0.3}
+    }
+   },
+   "river_oasis": {"spread_hex": null, "width_hex": null}
+  }
+ },
+ "mix_order": ["high", "plateau", "tundra", "gobi", "drymtn", "sgravel", "erg", "alpine", "alpine_meadow", "alpine_steppe", "salt_crust", "yardang"],
+ "biomes": {
+  "desert": {
+   "climate": 3,
+   "gameplay": "arid",
+   "sets": {"polish_climate": 0, "alpine_peer": 2, "gm_dry_high": 0, "farm_dry": 0, "farm_admit": 8, "farm_hum_dry": 0, "ff_dry": 2, "shrub": 0, "gameplay_polish": 0, "gc_arid": 0, "mirror_open": 0, "real_desert": 0}
+  },
+  "steppe": {
+   "climate": 3,
+   "gameplay": "arid",
+   "sets": {"polish_climate": 1, "ecotone_open": 0, "polish_steppe_donor": 0, "alpine_peer": 0, "gm_dry_high": 4, "farm_dry": 1, "farm_admit": 9, "farm_hum_dry": 1, "ff_steppe": 0, "ff_dry": 3, "fol_sparse": 0, "shrub": 1, "gameplay_polish": 1, "mirror_open": 1, "real_desert": 1}
+  },
+  "grass": {
+   "climate": 3,
+   "gameplay": "arid",
+   "sets": {"polish_climate": 2, "ecotone_open": 1, "polish_steppe_donor": 1, "alpine_peer": 3, "gm_dry_high": 5, "farm_admit": 2, "ff_steppe": 1, "shrub": 4, "gameplay_polish": 2, "gc_sub31": 0, "mirror_open": 2}
+  },
+  "alpine": {
+   "climate": 3,
+   "gameplay": "arid",
+   "sets": {"polish_climate": 3, "gm_dry_high": 1, "arid_alpine": 0, "fol_rock_high": 2, "fol_sparse": 1, "shrub": 2, "gameplay_polish": 3, "gc_arid": 1}
+  },
+  "tundra": {
+   "climate": 3,
+   "gameplay": "arid",
+   "sets": {"polish_climate": 4, "gm_dry_high": 3, "fol_rock_high": 1, "fol_sparse": 2, "shrub": 3, "gameplay_polish": 4, "gc_cold": 1, "no_oasis": 0, "no_alpine_belt": 0}
+  },
+  "snow": {
+   "climate": 3,
+   "gameplay": "arid",
+   "sets": {"polish_climate": 5, "alpine_peer": 1, "gm_dry_high": 2, "arid_alpine": 1, "fol_rock_high": 0, "gameplay_polish": 5, "gc_cold": 0, "no_oasis": 1}
+  },
+  "forest": {
+   "climate": 2,
+   "gameplay": "temperate",
+   "tree_fill": [0.82, "temperate"],
+   "sets": {"polish_climate": 8, "ecotone_forest": 2, "treeline_forest": 2, "sub_forest": 2, "farm_admit": 0, "tree_fill": 2, "forest_ground": 2, "gameplay_polish": 8, "gc_sub31": 4}
+  },
+  "conifer": {
+   "climate": 1,
+   "gameplay": "cold",
+   "tree_fill": [0.85, "cold_mixed"],
+   "sets": {"polish_climate": 6, "ecotone_forest": 1, "treeline_forest": 1, "sub_forest": 4, "farm_admit_half": 0, "fol_fir": 1, "tree_fill": 1, "forest_ground": 1, "gameplay_polish": 6, "fill_floor": 1}
+  },
+  "taiga": {
+   "climate": 1,
+   "gameplay": "cold",
+   "tree_fill": [0.85, "cold"],
+   "sets": {"polish_climate": 7, "ecotone_forest": 0, "treeline_forest": 0, "sub_forest": 5, "fol_fir": 0, "tree_fill": 0, "forest_ground": 0, "gameplay_polish": 7, "gc_cold": 2, "fill_floor": 0}
+  },
+  "temperate": {
+   "climate": 2,
+   "gameplay": "temperate",
+   "sets": {"polish_climate": 9, "ecotone_forest": 3, "treeline_forest": 3, "sub_forest": 3, "farm_admit": 1, "gameplay_polish": 9, "gc_sub31": 2}
+  },
+  "tropical": {
+   "climate": 0,
+   "gameplay": "subtropical",
+   "tree_fill": [0.82, "subtropical"],
+   "sets": {"polish_climate": 11, "ecotone_forest": 4, "sub_forest": 0, "farm_admit": 3, "fol_subtropical": 0, "tree_fill": 3, "forest_ground": 3, "gameplay_polish": 11, "gc_tropical": 0}
+  },
+  "tropical_dry": {
+   "climate": 0,
+   "gameplay": "subtropical",
+   "tree_fill": [0.5, "dry"],
+   "sets": {"polish_climate": 12, "ecotone_forest": 5, "sub_forest": 1, "farm_admit": 4, "farm_hum_dry": 2, "ff_dry": 0, "fol_dry": 0, "tree_fill": 5, "gameplay_polish": 12, "gc_tropical": 1}
+  },
+  "savanna": {
+   "climate": 0,
+   "gameplay": "subtropical",
+   "sets": {"polish_climate": 14, "ecotone_open": 2, "farm_admit": 5, "farm_hum_dry": 3, "ff_dry": 1, "fol_dry": 1, "shrub": 5, "gameplay_polish": 14, "gc_tropical": 2}
+  },
+  "wetland": {
+   "climate": 3,
+   "gameplay": "arid",
+   "sets": {"polish_climate": 10, "polish_wet": 0, "farm_admit": 7, "gameplay_polish": 10, "gc_sub31": 3}
+  },
+  "paddy": {
+   "climate": 0,
+   "gameplay": "subtropical",
+   "sets": {"polish_climate": 15, "sub_paddy": 0, "farm_admit": 6, "gameplay_polish": 15, "gc_tropical": 3}
+  },
+  "mangrove": {
+   "climate": 0,
+   "gameplay": "subtropical",
+   "tree_fill": [0.6, "subtropical"],
+   "sets": {"polish_climate": 13, "sub_paddy": 1, "fol_subtropical": 1, "tree_fill": 4, "forest_ground": 4, "gameplay_polish": 13, "gc_tropical": 4}
+  },
+  "other": {
+   "climate": null,
+   "gameplay": null,
+   "sets": {"gc_sub31": 1}
+  }
+ },
+ "sets": {
+  "polish_climate": {
+   "members": ["desert", "steppe", "grass", "alpine", "tundra", "snow", "conifer", "taiga", "forest", "temperate", "wetland", "tropical", "tropical_dry", "mangrove", "savanna", "paddy"],
+   "note": "polish _clim: real-ground tile climate (the record's climate)"
+  },
+  "ecotone_open": {
+   "members": ["steppe", "grass", "savanna"],
+   "note": "polish USR3 ECOTONE _eopen: open side of the open/forest redraw"
+  },
+  "ecotone_forest": {
+   "members": ["taiga", "conifer", "forest", "temperate", "tropical", "tropical_dry"],
+   "note": "polish USR3 ECOTONE _efor: forest side (with tropical/tropical_dry, no mangrove; treeline_forest has no tropics)"
+  },
+  "polish_steppe_donor": {
+   "members": ["steppe", "grass"],
+   "note": "polish real_steppe: steppe donor (9) where the tile climate is arid"
+  },
+  "polish_wet": {
+   "members": ["wetland"],
+   "note": "polish real_wet: wetland belts (oasis .9, alpine .6)"
+  },
+  "fill_floor": {
+   "members": ["taiga", "conifer"],
+   "note": "biome_profiles.fill_floor: FOREST_FILL_FLOOR of the far forest fill (TW3K_FOREST_FILL_FLOOR; ground and tree fill)"
+  },
+  "no_oasis": {
+   "members": ["tundra", "snow"],
+   "note": "polish oasis belts (river, wetland, lake ring) never on these classes, nor on grass north of TUNDRA_GRASS_LAT (TW3K_TUNDRA_OASIS_OFF)"
+  },
+  "no_alpine_belt": {
+   "members": ["tundra"],
+   "note": "polish alpine (keep) belts never on these classes, nor on grass north of TUNDRA_GRASS_LAT (TW3K_TUNDRA_OASIS_OFF)"
+  },
+  "treeline_forest": {
+   "members": ["taiga", "conifer", "forest", "temperate"],
+   "note": "ecotone_bands FOREST: forest side of the treeline (taiga/conifer/forest/temperate only)"
+  },
+  "alpine_peer": {
+   "members": ["steppe", "snow", "desert", "grass"],
+   "note": "ecotone_bands ALPINE_PEERS: classes dithered against alpine (seed 150 + rank)"
+  },
+  "gm_dry_high": {
+   "members": ["desert", "alpine", "snow", "tundra", "steppe", "grass"],
+   "note": "ground_materials tile_fields dry_high: weight of the high/plateau (cold band) classes"
+  },
+  "farm_dry": {
+   "members": ["desert", "steppe"],
+   "note": "ground_materials farm_mud_fields dry: watered-only farming (desert, steppe; farm_hum_dry adds tropical_dry/savanna)"
+  },
+  "farm_admit": {
+   "members": ["forest", "temperate", "grass", "tropical", "tropical_dry", "savanna", "paddy", "wetland", "desert", "steppe"],
+   "note": "ground_materials farm_mud_fields admit 1 (alpine/tundra/snow/taiga/other admit 0)"
+  },
+  "farm_admit_half": {
+   "members": ["conifer"],
+   "note": "ground_materials farm_mud_fields admit .5 (conifer)"
+  },
+  "farm_hum_dry": {
+   "members": ["desert", "steppe", "tropical_dry", "savanna"],
+   "note": "ground_materials farm_mud_fields hum: 1 - blurred share of these (tea humidity); same members as ff_dry"
+  },
+  "sub_paddy": {
+   "members": ["paddy", "mangrove"],
+   "note": "oasis_ground SUB_PADDY: subtropical paddy-lowland donor (10)"
+  },
+  "sub_forest": {
+   "members": ["tropical", "tropical_dry", "forest", "temperate", "conifer", "taiga"],
+   "note": "oasis_ground SUB_FOREST: subtropical forest share keeps donor list 0 (ecotone_forest plus conifer/taiga)"
+  },
+  "arid_alpine": {
+   "members": ["alpine", "snow"],
+   "note": "oasis_ground arid_share: alpine/snow counted arid times dryness"
+  },
+  "ff_steppe": {
+   "members": ["steppe", "grass"],
+   "note": "farm_fields steppe_ids: pastoral steppe towns (STEPPE_SCALE)"
+  },
+  "ff_dry": {
+   "members": ["tropical_dry", "savanna", "desert", "steppe"],
+   "note": "farm_fields dry_ids: no tea field donors on these"
+  },
+  "fol_rock_high": {
+   "members": ["snow", "tundra", "alpine"],
+   "note": "foliage_biomes choose: rock above surface 3.5 (else 4.8)"
+  },
+  "fol_fir": {
+   "members": ["taiga", "conifer"],
+   "note": "foliage_biomes choose: dense firs"
+  },
+  "fol_subtropical": {
+   "members": ["tropical", "mangrove"],
+   "note": "foliage_biomes choose: bamboo/castanopsis forest"
+  },
+  "fol_dry": {
+   "members": ["tropical_dry", "savanna"],
+   "note": "foliage_biomes choose: sparse castanopsis"
+  },
+  "fol_sparse": {
+   "members": ["steppe", "alpine", "tundra"],
+   "note": "foliage_biomes choose: .008 (fir on alpine/tundra, katsura on steppe)"
+  },
+  "tree_fill": {
+   "members": ["taiga", "conifer", "forest", "tropical", "mangrove", "tropical_dry"],
+   "note": "frontier_forest FOREST: one tree per hex at the record's tree_fill (no temperate, unlike treeline_forest)"
+  },
+  "shrub": {
+   "members": ["desert", "steppe", "alpine", "tundra", "grass", "savanna"],
+   "note": "frontier_forest OPEN_BIOMES: rock shrubs"
+  },
+  "forest_ground": {
+   "members": ["taiga", "conifer", "forest", "tropical", "mangrove"],
+   "note": "apply_forest_ground FOREST_BIOMES: light/dense forest ground (tree_fill without tropical_dry)"
+  },
+  "gameplay_polish": {
+   "members": ["desert", "steppe", "grass", "alpine", "tundra", "snow", "conifer", "taiga", "forest", "temperate", "wetland", "tropical", "tropical_dry", "mangrove", "savanna", "paddy"],
+   "note": "apply_climate POLISH_CLIMATE: Western Regions map.hex climate (the record's gameplay; other -> OTHER_DEFAULT)"
+  },
+  "gc_tropical": {
+   "members": ["tropical", "tropical_dry", "savanna", "paddy", "mangrove"],
+   "note": "apply_climate classify tropical: subtropical; cold at >= 27 N and >= 2000 m"
+  },
+  "gc_sub31": {
+   "members": ["grass", "other", "temperate", "wetland", "forest"],
+   "note": "apply_climate classify: subtropical south of 31 N"
+  },
+  "gc_arid": {
+   "members": ["desert", "alpine"],
+   "note": "apply_climate classify: arid (vanilla desert 75 %, montane grassland 81 %)"
+  },
+  "gc_cold": {
+   "members": ["snow", "tundra", "taiga"],
+   "note": "apply_climate classify: always cold"
+  },
+  "mirror_open": {
+   "members": ["desert", "steppe", "grass"],
+   "note": "polish mirror band: real open ground where mirrored vanilla woodland (WOODLAND_MATERIALS) takes the canvas donor"
+  },
+  "real_desert": {
+   "members": ["desert", "steppe"],
+   "note": "polish real climate: desert and steppe override the carried native climate from REAL_DESERT_FADE (not REAL_GROUND_FADE); steppe takes the steppe donor there"
+  }
+ },
+ "other_default": {"polish_climate": null, "gameplay_polish": "arid"},
+ "cold_lines": {
+  "SNOWLINE": [[47.0, 50.0, 54.0, 58.0], [3000.0, 2500.0, 2000.0, 1700.0]],
+  "TREELINE": [[28.0, 34.0, 38.0, 42.0, 46.0, 50.0, 54.0, 58.0, 62.0], [3900.0, 3700.0, 3400.0, 3000.0, 2600.0, 2200.0, 1800.0, 1400.0, 1000.0]],
+  "PERENNIAL_SNOW": [[26.0, 28.0, 30.0, 32.0, 35.0, 36.5, 38.0, 39.0, 42.0, 44.0, 47.0, 50.0, 54.0, 60.0, 66.0], [5200.0, 5400.0, 5700.0, 5650.0, 5800.0, 5350.0, 4950.0, 4700.0, 4100.0, 3800.0, 3400.0, 3100.0, 2700.0, 2200.0, 1900.0]],
+  "COLD_ELEV": 3000,
+  "NORTH_COLD": 47
+ },
+ "regions": {
+  "sand_seas": {
+   "consumers": ["ground_materials.SAND_SEAS", "audit_terrain_realism (sand_mask)"],
+   "polygons": {
+    "Taklamakan": [[77.6, 38.6], [78.4, 39.8], [80.3, 40.5], [83.4, 40.9], [86.4, 40.7], [88.2, 40.0], [88.6, 38.9], [87.2, 38.3], [84.6, 37.4], [81.6, 37.1], [79.2, 37.5]],
+    "Kumtag": [[89.6, 40.0], [91.0, 40.5], [92.8, 40.4], [93.4, 39.9], [92.0, 39.4], [90.1, 39.3]],
+    "Gurbantunggut": [[84.8, 44.7], [86.5, 45.7], [88.8, 46.0], [90.1, 45.4], [89.6, 44.5], [87.0, 44.4]],
+    "Badain Jaran": [[100.0, 39.6], [100.8, 41.2], [102.8, 41.6], [104.0, 40.5], [103.0, 39.4], [101.0, 39.2]],
+    "Tengger": [[102.8, 38.0], [103.2, 39.6], [104.8, 39.9], [105.6, 38.6], [104.3, 37.5]],
+    "Otindag": [[114.0, 42.5], [116.4, 43.5], [117.6, 43.0], [116.1, 42.2]],
+    "Horqin": [[119.4, 42.5], [122.4, 43.8], [123.6, 43.0], [121.0, 42.1]],
+    "Khongoryn Els": [[101.4, 43.55], [104.2, 43.95], [104.3, 43.7], [101.5, 43.35]],
+    "Karakum": [[54.0, 37.8], [53.5, 40.5], [57.0, 41.5], [61.0, 41.5], [63.5, 39.5], [62.0, 37.5], [58.0, 37.6]],
+    "Kyzylkum": [[61.5, 41.2], [62.0, 43.5], [64.5, 44.0], [67.5, 43.2], [67.5, 41.0], [65.0, 40.0], [63.0, 40.3]],
+    "Moyynkum": [[68.5, 44.0], [70.0, 45.2], [73.5, 45.1], [73.8, 44.0], [71.0, 43.5]],
+    "Saryesik-Atyrau": [[74.5, 45.3], [75.0, 46.4], [78.5, 46.3], [79.5, 45.3], [77.0, 44.8]],
+    "Thar": [[69.5, 24.5], [70.0, 29.0], [73.5, 30.0], [75.0, 27.5], [73.0, 24.5]],
+    "Rub al Khali": [[47.0, 19.0], [48.0, 22.0], [52.0, 23.0], [55.5, 22.5], [55.0, 19.0], [51.0, 17.5]],
+    "Lut": [[57.6, 29.0], [58.0, 32.0], [59.5, 31.5], [59.5, 29.0]]
+   }
+  },
+  "oasis_discs": {
+   "consumers": ["ground_materials.OASES", "oasis_ground.OASIS_SEEDS (shared centres)"],
+   "discs": {
+    "Dunhuang": [94.66, 40.14, 28],
+    "Anxi": [95.9, 40.5, 18],
+    "Hami": [93.5, 42.82, 22],
+    "Turpan": [89.19, 42.95, 30],
+    "Korla": [86.15, 41.73, 22],
+    "Kucha": [82.96, 41.72, 28],
+    "Aksu": [80.26, 41.17, 32],
+    "Kashgar": [75.99, 39.47, 38],
+    "Yarkand": [77.25, 38.42, 38],
+    "Khotan": [79.92, 37.11, 32],
+    "Niya": [82.7, 37.07, 14],
+    "Charklik": [88.17, 39.03, 14],
+    "Jiuquan": [98.5, 39.74, 26],
+    "Zhangye": [100.45, 38.93, 30],
+    "Wuwei": [102.64, 37.93, 30],
+    "Samarkand": [66.96, 39.65, 40],
+    "Bukhara": [64.42, 39.77, 40],
+    "Merv": [61.83, 37.6, 34],
+    "Balkh": [66.9, 36.76, 30],
+    "Khwarazm": [60.6, 41.5, 45],
+    "Tashkent": [69.24, 41.3, 30],
+    "Herat": [62.2, 34.35, 26]
+   }
+  },
+  "oasis_areas": {
+   "consumers": ["ground_materials.OASIS_AREAS"],
+   "polygons": {
+    "Ferghana": [[70.55, 40.25], [71.4, 40.1], [72.4, 40.35], [73.15, 40.55], [73.35, 40.95], [72.6, 41.2], [71.6, 41.15], [70.9, 41.05], [70.45, 40.65]]
+   }
+  },
+  "oasis_seeds": {
+   "consumers": ["oasis_ground.OASIS_SEEDS"],
+   "seeds": {
+    "Hami": {"at": "Hami", "km2": 200, "source": "Yiwulu: Han garrison fields on the Hami oasis"},
+    "Dunhuang": {"at": "Dunhuang", "km2": 450, "source": "Shazhou on the Dang river fan"},
+    "Guazhou": {"at": "Anxi", "km2": 300, "source": "Guazhou/Anxi on the Shule river"},
+    "Kucha": {"at": "Kucha", "km2": 1600},
+    "Aksu": {"at": "Aksu", "km2": 490},
+    "Kashgar": {"at": "Kashgar", "km2": 370},
+    "Yarkand": {"at": "Yarkand", "km2": 330},
+    "Khotan": {"at": "Khotan", "km2": 390},
+    "Niya": {
+     "lonlat": [82.72, 37.97],
+     "km2": 70,
+     "source": "Niya ruins (Jingjue), Stein site N, 37 58 N 82 43 E"
+    },
+    "Cherchen": {
+     "lonlat": [85.53, 38.14],
+     "km2": 50,
+     "source": "Qiemo county seat 38 08 N 85 32 E"
+    },
+    "Charklik": {"at": "Charklik", "km2": 200, "source": "Yuni, the Shanshan capital"},
+    "Loulan": {
+     "lonlat": [89.92, 40.52],
+     "km2": 80,
+     "source": "Loulan LA site 40 31 N 89 55 E"
+    },
+    "Korla": {"at": "Korla", "km2": 190},
+    "Yanqi": {
+     "lonlat": [86.57, 42.06],
+     "km2": 640,
+     "source": "Yanqi county seat 42 04 N 86 34 E (Yuanqu)"
+    }
+   }
+  },
+  "karez": {
+   "consumers": [],
+   "core_hex": 0.2,
+   "radius_hex": 1.0,
+   "lines": {
+    "Turpan, south-east of the city": [[89.1, 42.98], [89.3, 42.85]],
+    "Gaochang / Shengjin": [[89.45, 42.93], [89.6, 42.85]],
+    "Shanshan / Lukqun": [[90.1, 42.95], [90.3, 42.78]],
+    "Liuzhong (Lukqun)": [[89.64, 42.84], [89.84, 42.72]],
+    "Toksun": [[88.55, 42.85], [88.7, 42.75]],
+    "Hami": [[93.4, 42.85], [93.6, 42.75]]
+   }
+  },
+  "turpan_han_oasis": {
+   "consumers": ["oasis_ground.han_oases", "oasis_ground.clean_islands"],
+   "core": 0.7,
+   "edge": 1.3,
+   "warp": 0.15,
+   "grain_hex": 3.0,
+   "support": 0.1,
+   "island_min_hex": 4,
+   "box": [88.85, 90.05, 42.6, 43.1],
+   "patches": {
+    "Jiaohe": {
+     "lonlat": [89.075, 42.94],
+     "km2": 25,
+     "source": "Jiaohe ruins 42 57 N 89 04 E: terrace between the two Yarnaz branches (Jushi front capital)"
+    },
+    "Gaochang": {
+     "lonlat": [89.545, 42.875],
+     "km2": 90,
+     "source": "Murtuk/Sengim gorge outflow to Gaochang bi (Han tuntian), ruins 42 51 N 89 32 E"
+    },
+    "Tuyuk": {
+     "lonlat": [89.69, 42.83],
+     "km2": 30,
+     "source": "Tuyuk gorge mouth 42 51 N 89 41 E; centre on its fan 2 km south (27 .. -6 m)"
+    },
+    "Liuzhong": {
+     "lonlat": [89.76, 42.75],
+     "km2": 80,
+     "source": "Liuzhong/Lukchun (Later Han Wuji colonel), 42.744 N 89.758 E"
+    }
+   },
+   "spring_lines": {
+    "Yarnaz branches": {
+     "radius_hex": 0.5,
+     "step_hex": 0.25,
+     "points": [[89.07, 42.99], [89.075, 42.94], [89.075, 42.886]]
+    },
+    "Yarnaz fan": {
+     "radius_hex": 0.5,
+     "step_hex": 0.25,
+     "points": [[88.966, 42.938], [89.075, 42.94], [89.185, 42.956]]
+    },
+    "Yarnaz south fan": {
+     "radius_hex": 0.5,
+     "step_hex": 0.25,
+     "points": [[89.02, 42.884], [89.075, 42.886], [89.175, 42.895]]
+    },
+    "Flaming Mountains south foot": {
+     "radius_hex": 0.55,
+     "step_hex": 0.25,
+     "points": [[89.41, 42.913], [89.45, 42.915], [89.53, 42.895], [89.6, 42.845], [89.66, 42.81], [89.72, 42.795], [89.8, 42.775], [89.86, 42.77]]
+    }
+   }
+  },
+  "western_regions": {
+   "consumers": ["apply_climate.WR_LON_MAX/WR_LAT_MIN/WR_LAT_MAX"],
+   "lon_max": 94.66,
+   "lat_min": 34.5,
+   "lat_max": 47.5,
+   "note": "DUNHUANG_REAL lon; Kunlun to the Irtysh/Balkhash"
+  },
+  "wr_west_band": {
+   "consumers": ["frontier_forest.plant (forest fill)", "apply_forest_ground (forest ground)"],
+   "q_lt": "PAD_LEFT",
+   "r_ge": "PAD_BOTTOM",
+   "r_lt": ["PAD_BOTTOM", "NATIVE_H"]
+  },
+  "authored_bands": {
+   "consumers": ["native_campaign_climate.band_climate", "polish_campaign_foliage band rule"],
+   "source": "work/canvas-authored-coordinates.json:biome_bands",
+   "keys": ["arid_max_q", "arid_min_r", "tropical_max_r", "cold_min_r", "cold_min_q", "foliage_arid_max_q"],
+   "wobble": {
+    "q": [[7, 0.083], [4, 0.21, 0.05]],
+    "r": [[7, 0.071], [4, 0.19, 0.06]]
+   }
+  },
+  "perennial_summits": {
+   "consumers": ["biome_profiles.perennial_snow"],
+   "slope": 450.0,
+   "min_above_line": 150.0,
+   "min_flattening": 500.0,
+   "points": [["Gongga", 101.888, 29.588, 7556, 6273], ["Siguniang", 102.9, 31.118, 6250, 5049], ["Que'ershan", 98.817, 32.036, 6168, 5232], ["Xuebaoding", 103.847, 32.679, 5588, 4851], ["Yulong", 100.185, 27.108, 5596, 4800], ["Haba", 100.102, 27.331, 5396, 4636], ["Kawagebo (Meili)", 98.679, 28.437, 6740, 5612], ["Ge'nyen", 99.61, 29.796, 6204, 5342], ["Baima", 98.976, 28.302, 5430, 4929], ["Amne Machin", 99.463, 34.802, 6282, 5773], ["Nyainqentanglha", 90.573, 30.376, 7162, 6540], ["Namcha Barwa", 95.058, 29.638, 7782, 6772], ["Gyala Peri", 94.96, 29.818, 7294, 6113], ["Kangrinboqe", 81.253, 31.142, 6638, 5817], ["Gangshiqia (Lenglongling)", 101.675, 37.605, 5254, 4474]]
+  },
+  "han_farming_frontier": {
+   "consumers": ["ground_materials.FARM_LAT"],
+   "lat": [45.0, 49.0]
+  },
+  "wetlands_extra": {
+   "consumers": ["apply_climate.WETLANDS_EXTRA"],
+   "boxes": [["Vasyugan mire (West Siberian plain)", 75.0, 83.5, 56.0, 58.8, 150, false], ["Baraba lowland marshes", 76.0, 80.5, 54.6, 56.0, 150, true], ["Ob-Irtysh floodplain marshes", 68.0, 74.5, 58.5, 61.5, 80, true], ["Selenga delta (Baikal)", 105.8, 106.9, 52.0, 52.6, 520, false], ["Sanjiang plain (Amur-Ussuri-Songhua)", 130.8, 134.8, 46.5, 48.4, 80, false], ["Lower Amur lakes (Udyl, Evoron)", 136.0, 140.0, 50.5, 53.0, 60, true], ["Mekong delta (Plain of Reeds, U Minh)", 104.5, 106.8, 8.6, 11.2, 4, false], ["Irrawaddy delta", 94.2, 96.3, 15.5, 17.8, 5, false]]
+  },
+  "lake_keep": {
+   "consumers": ["apply_real_lakes.KEEP_BOXES"],
+   "boxes": {
+    "Lop Nur": [89.3, 91.6, 39.6, 41.3],
+    "Zaysan": [83.0, 85.0, 47.6, 48.6]
+   }
+  },
+  "salt_crusts": {
+   "consumers": ["biome_profiles.classify salt_crust"],
+   "polygons": {
+    "Lop Nur": [[89.6, 39.9], [90.2, 40.9], [91.4, 41.0], [91.6, 40.3], [90.8, 39.8]],
+    "Halaqi (Shule terminal)": [[93.4, 40.3], [93.7, 40.6], [94.6, 40.6], [94.8, 40.3], [94.0, 40.15]],
+    "Qarhan (Qaidam)": [[94.4, 36.7], [94.7, 37.2], [96.4, 37.2], [96.6, 36.8], [95.5, 36.6]]
+   }
+  },
+  "yardang": {
+   "consumers": ["biome_profiles.classify yardang"],
+   "polygons": {
+    "Lop Nur NE (Long Cheng / Bailongdui)": [[90.6, 40.2], [91.0, 40.8], [92.2, 40.8], [92.4, 40.3], [91.4, 40.0]],
+    "Yumen NW (Dunhuang Yadan)": [[92.6, 40.35], [92.8, 40.6], [93.35, 40.6], [93.4, 40.35]]
+   }
+  },
+  "salt_lakes": {
+   "consumers": ["paint_salt_pan_sea_colour (salt-lake water colour)"],
+   "rgb_shore": [88, 170, 156],
+   "rgb_deep": [34, 122, 130],
+   "deep_hex": 5.0,
+   "grow_tiles": 2,
+   "snap_deg": 0.3,
+   "lakes": {
+    "Qinghai Lake (Qinghai Hu)": [100.2, 36.9],
+    "Nam Co": [90.6, 30.75],
+    "Siling Co": [89.0, 31.8],
+    "Zhari Namco": [85.62, 30.94],
+    "Tangra Yumco": [86.59, 31.05],
+    "Dagze Co": [87.52, 31.91],
+    "Ngangla Ringco": [83.09, 31.55],
+    "Dorsoidong Co": [90.07, 33.45],
+    "Bangong Co": [78.69, 33.8],
+    "Elsen Nur (Hoh Xil)": [92.13, 35.23],
+    "Hoh Xil Hu": [91.15, 35.6],
+    "Ayakkum Hu": [89.4, 37.55]
+   }
+  },
+  "oasis_valleys": {
+   "consumers": ["polish OASIS_VALLEYS"],
+   "status": "dead, marked for removal, kept",
+   "weights": {"塔里木河": 1.1, "伊犁河谷": 0.9, "锡尔河": 0.8, "阿姆河": 0.8}
+  },
+  "town_climate": {
+   "consumers": ["polish TOWN_CLIMATE/TOWN_CLIMATE_R"],
+   "towns": {},
+   "radius_hex": [6, 10]
+  },
+  "korea_patch": {
+   "consumers": ["korea_patch.window", "coast_tiles.korea_aligned_elevation"],
+   "province_class": "peninsula",
+   "west_edge": 7,
+   "win_west": -11,
+   "win_south": -13,
+   "north_edge_below_top": 29,
+   "east_edge_inside": 13,
+   "peninsula_margin": 0.05,
+   "peninsula": [[124.33, 39.85], [124.4, 40.1], [124.97, 40.46], [126.19, 41.1], [128.18, 41.4], [128.07, 42.0], [129.21, 42.23], [129.75, 42.45], [130.0, 42.95], [130.7, 42.3], [131.5, 41.0], [131.5, 33.0], [124.0, 33.0], [124.0, 39.6]]
+  },
+  "korea_forests": {
+   "consumers": ["korea_patch.build (cold_line, ground classes, SPECIES)"],
+   "off": {
+    "cold_line": [1250.0, 170.0, 36.0, 350.0, 1400.0],
+    "mixed_band": 350.0
+   },
+   "on": {
+    "cold_line": [1400.0, 90.0, 38.0, 900.0, 1500.0],
+    "mixed_band": 450.0
+   },
+   "species": {
+    "10": [["temperate_tree_katsura_small_1", "temperate_tree_katsura_single_1", "temperate_tree_katsura_small_blossom"], 0.12, 0.03, 3, 0.9],
+    "11": [["temperate_tree_katsura_medium_1", "temperate_tree_katsura_medium_2", "temperate_tree_katsura_large_1", "temperate_tree_katsura_small_1"], 0.9, 0.45, 8, 1.1],
+    "12": [["cold_tree_fir_medium_1", "temperate_tree_katsura_medium_1", "temperate_tree_metasequoia_medium_1", "temperate_tree_katsura_large_2"], 0.9, 0.45, 8, 1.1],
+    "13": [["cold_tree_fir_medium_1", "cold_tree_fir_large_1", "cold_tree_fir_small_1", "cold_tree_fir_medium_2"], 0.95, 0.5, 8, 1.1],
+    "14": [["general_rock_medium_1", "general_rock_small_1", "rock_shrub_small_1"], 0.2, 0.1, 1, 0.7]
+   }
+  }
+ },
+ "oasis_seeds": {
+  "Hami": [93.5, 42.82, 200],
+  "Dunhuang": [94.66, 40.14, 450],
+  "Guazhou": [95.9, 40.5, 300],
+  "Kucha": [82.96, 41.72, 1600],
+  "Aksu": [80.26, 41.17, 490],
+  "Kashgar": [75.99, 39.47, 370],
+  "Yarkand": [77.25, 38.42, 330],
+  "Khotan": [79.92, 37.11, 390],
+  "Niya": [82.72, 37.97, 70],
+  "Cherchen": [85.53, 38.14, 50],
+  "Charklik": [88.17, 39.03, 200],
+  "Loulan": [89.92, 40.52, 80],
+  "Korla": [86.15, 41.73, 190],
+  "Yanqi": [86.57, 42.06, 640]
+ },
+ "rules": {
+  "sgravel": {
+   "elev": [700, 2500],
+   "elev_ramp": 300,
+   "lat_max": 50.5,
+   "lat_ramp": 1.5
+  },
+  "erg": {"blur": 6, "warp": 0.3, "contrast": 2.2},
+  "tibet": {
+   "meadow_elev": [3200.0, 5100.0],
+   "meadow_lat": [28.0, 38.5],
+   "steppe_elev": [4000.0, 5400.0],
+   "steppe_lat": [30.0, 37.0],
+   "elev_ramp": 200.0,
+   "lat_ramp": 0.5,
+   "dry": [0.3, 0.5],
+   "humid_lon": [90.0, 92.5]
+  },
+  "salt_crust": {"max_elev": 3200.0, "blur": 3},
+  "yardang": {"blur": 3},
+  "gameplay": {
+   "sub_lat": 31,
+   "forest_sub_lat": 27,
+   "tropical_cold": [27, 2000],
+   "steppe_arid_elev": 1500,
+   "conifer_lat": [34, 44],
+   "conifer_arid_elev": 1500,
+   "forest_cold": [27, 36, 1500],
+   "forest_cold_lat": 45
+  }
+ },
+ "consts": {
+  "snow_bake": {
+   "PERENNIAL_FUZZ": 120.0,
+   "PERENNIAL_RAMP": 150.0,
+   "MONSOON_DROP": 450.0,
+   "MONSOON_LON": [90.0, 6.0],
+   "MONSOON_LAT": [34.5, 2.5],
+   "DRY_RAISE": 400.0,
+   "DRY_REGION": [4900.0, 300.0],
+   "WINTER_LAT": [[38.0, 45.0, 50.0], [0.0, 0.7, 1.0]],
+   "PLATEAU_DRY": {
+    "elev": [3000.0, 1000.0],
+    "lat": [40.0, 2.0]
+   },
+   "WINTER_DRY": 0.6,
+   "TREE_FUZZ": 150.0,
+   "TREE_RAMP": 300.0,
+   "WINTER_MOUNTAIN": [1000.0, 800.0],
+   "COVERAGE": {
+    "winter_dry": 0.85,
+    "rel": [150.0, 600.0],
+    "local_km": 26.0,
+    "region_km": 100.0,
+    "stable_snow": {
+     "centre": [85.5, 45.4],
+     "radius": [6.0, 2.2],
+     "rim": 0.3
+    }
+   },
+   "SHOULDER_LAT": [50.0, 54.0]
+  },
+  "props": {
+   "ROCK_RELIEF": 400.0,
+   "ROCK_RELIEF_K": 3,
+   "ROCK_ARID": ["desert", "steppe", "grass", "savanna"],
+   "TREELINE_CLASS_MIN": 0.5,
+   "TOWN_OASIS": {
+    "classes": ["desert"],
+    "oasis_classes": ["steppe"],
+    "ring_hex": [8.0, 12.0],
+    "chance": 0.22,
+    "floor_ring_hex": [8.0, 16.0],
+    "oasis_min": 0.5,
+    "min_hit_share": 0.15,
+    "trees_per_hit": 3
+   },
+   "MOUNTAIN_FAMILY_COUNT_TOL": 0.1,
+   "MOUNTAIN_TARGET": {
+    "rate": {"cold": 0.0016465714133956553, "arid": 0.00042426813746287653},
+    "scale": {"cold": 1.66, "arid": 6.94}
+   }
+  },
+  "ground_materials": {
+   "NATIVE_RING": {"reach": 12.0, "meander": 20.0},
+   "NATIVE_EDGE": {"grain": 14.0, "seed": 95},
+   "VISUAL_DOMAINS": {
+    "material_ramp_hex": [0.0, 4.0],
+    "vegetation_ramp_hex": [0.0, 4.0]
+   },
+   "MIRROR_EDGE": {"reach": 6.0, "meander": 14.0},
+   "TONE_CUT": {
+    "ratio": 3.0,
+    "by_season": {
+     "spring": {"min": 5.757603178024315, "floor": 1.9192010593414384},
+     "summer": {"min": 5.6349348449707115, "floor": 1.8783116149902372},
+     "harvest": {"min": 5.6349348449707115, "floor": 1.8783116149902372},
+     "autumn": {"min": 5.55613847732544, "floor": 1.85204615910848},
+     "winter": {"min": 5.865808463096624, "floor": 1.9552694876988745}
+    },
+    "provenance": {"blend_sha256": "08fa46b37cee492f36f434ed3e46b37521d4ae66e9d8fe143b0db1b235f5b9bb", "date": "2026-10-30", "segments": 242, "json": "analysis/material-tones.json"}
+   },
+   "MATERIAL_TONE": {
+    "spring": [[73.76, 2.89, 34.26], [69.44, 2.8, 36.0], [65.79, 1.3, 31.13], [67.86, 0.83, 32.92], [32.82, -7.42, 31.4], [27.7, -10.83, 20.43], [39.86, -14.21, 35.12], [47.53, -9.06, 42.35], [45.47, -8.24, 38.31], [55.82, -10.44, 46.53], [52.63, -18.82, 42.48], [52.0, -12.64, 37.45], [50.78, -20.37, 45.62], [60.98, -1.59, 27.77], [48.78, 0.95, 34.14], [56.2, -25.17, 5.26], [48.54, -8.56, -0.4], [49.54, -24.12, 5.9], [47.67, -14.13, 0.79], [67.23, 1.83, 37.27], [62.39, 1.58, 39.78], [56.42, -1.81, 43.42], [51.58, -8.06, 44.16], [63.72, -6.84, 50.55], [55.88, -11.75, 50.21], [50.41, -10.43, 44.62], [48.24, -7.35, 40.8], [67.07, -5.82, 47.44], [61.56, -12.45, 46.65], [59.23, -11.49, 49.13], [57.82, -12.98, 50.0], [50.7, -8.66, 36.39]],
+    "summer": [[73.76, 2.89, 34.26], [69.44, 2.8, 36.0], [65.79, 1.3, 31.13], [67.86, 0.83, 32.92], [32.82, -7.42, 31.4], [27.7, -10.83, 20.43], [39.86, -14.21, 35.12], [47.53, -9.06, 42.35], [65.41, -12.81, 57.81], [62.22, -9.32, 51.53], [55.91, -21.79, 52.75], [55.94, -18.16, 51.92], [50.78, -20.37, 45.62], [60.98, -1.59, 27.77], [48.78, 0.95, 34.14], [56.2, -25.17, 5.26], [48.54, -8.56, -0.4], [49.54, -24.12, 5.9], [47.67, -14.13, 0.79], [67.23, 1.83, 37.27], [62.39, 1.58, 39.78], [56.42, -1.81, 43.42], [51.58, -8.06, 44.16], [63.72, -6.84, 50.55], [55.88, -11.75, 50.21], [45.29, -11.81, 39.69], [42.79, -7.63, 37.01], [64.4, -2.39, 43.32], [59.87, -9.76, 49.59], [56.29, -12.13, 50.47], [50.05, -11.82, 45.45], [49.33, -8.64, 36.49]],
+    "harvest": [[73.76, 2.89, 34.26], [69.44, 2.8, 36.0], [65.79, 1.3, 31.13], [67.86, 0.83, 32.92], [32.82, -7.42, 31.4], [27.7, -10.83, 20.43], [39.86, -14.21, 35.12], [47.53, -9.06, 42.35], [75.69, 1.54, 58.45], [63.5, -6.87, 51.78], [67.99, -12.25, 41.32], [61.58, -13.65, 47.73], [50.78, -20.37, 45.62], [60.98, -1.59, 27.77], [48.78, 0.95, 34.14], [56.2, -25.17, 5.26], [48.54, -8.56, -0.4], [49.54, -24.12, 5.9], [47.67, -14.13, 0.79], [67.23, 1.83, 37.27], [62.39, 1.58, 39.78], [56.42, -1.81, 43.42], [51.58, -8.06, 44.16], [63.72, -6.84, 50.55], [55.88, -11.75, 50.21], [45.29, -11.81, 39.69], [42.79, -7.63, 37.01], [64.4, -2.39, 43.32], [59.87, -9.76, 49.59], [56.29, -12.13, 50.47], [50.05, -11.82, 45.45], [49.33, -8.64, 36.49]],
+    "autumn": [[73.76, 2.89, 34.26], [69.44, 2.8, 36.0], [65.79, 1.3, 31.13], [67.86, 0.83, 32.92], [32.82, -7.42, 31.4], [27.7, -10.83, 20.43], [39.86, -14.21, 35.12], [47.53, -9.06, 42.35], [51.27, 7.72, 43.03], [55.16, -1.12, 40.78], [42.33, 2.87, 32.91], [49.03, -3.34, 40.59], [50.78, -20.37, 45.62], [60.98, -1.59, 27.77], [48.78, 0.95, 34.14], [56.2, -25.17, 5.26], [48.54, -8.56, -0.4], [49.54, -24.12, 5.9], [47.67, -14.13, 0.79], [67.23, 1.83, 37.27], [62.39, 1.58, 39.78], [56.42, -1.81, 43.42], [51.58, -8.06, 44.16], [63.72, -6.84, 50.55], [55.88, -11.75, 50.21], [45.38, -9.98, 41.16], [43.67, 1.67, 39.54], [63.49, 2.12, 42.42], [59.05, -6.83, 40.11], [54.31, -7.03, 43.76], [49.57, -5.7, 43.16], [48.8, -4.81, 29.94]],
+    "winter": [[73.76, 2.89, 34.26], [69.44, 2.8, 36.0], [65.79, 1.3, 31.13], [67.86, 0.83, 32.92], [32.82, -7.42, 31.4], [27.7, -10.83, 20.43], [39.86, -14.21, 35.12], [47.53, -9.06, 42.35], [53.01, 0.58, 16.68], [58.18, -0.61, 14.55], [39.52, 3.72, 25.73], [45.18, -1.88, 34.75], [50.78, -20.37, 45.62], [60.98, -1.59, 27.77], [48.78, 0.95, 34.14], [56.2, -25.17, 5.26], [48.54, -8.56, -0.4], [49.54, -24.12, 5.9], [47.67, -14.13, 0.79], [67.23, 1.83, 37.27], [62.39, 1.58, 39.78], [56.42, -1.81, 43.42], [51.58, -8.06, 44.16], [63.72, -6.84, 50.55], [55.88, -11.75, 50.21], [73.58, -1.09, 2.79], [54.42, -4.43, 14.38], [55.52, -2.37, 17.1], [53.31, -2.76, 13.08], [54.35, -3.79, 10.69], [56.17, -2.8, 9.73], [48.25, -2.18, 20.68]]
+   },
+   "CONTRAST": {
+    "pairs": 53613816,
+    "differing_share": 0.03749,
+    "percentiles_of_differing": {"50": 11.441902160644531, "75": 14.927227020263672, "90": 22.663524627685547, "95": 30.072057723999023, "99": 36.86005783081055, "99.9": 43.4322395324707},
+    "max_dE": 36.86005783081055,
+    "share_above_max": 0.000332,
+    "share_above": {"5": 0.034558, "10": 0.024355, "15": 0.009136, "20": 0.004767, "25": 0.003212, "30": 0.002252, "40": 0.000327},
+    "by_band": {
+     "0": {
+      "pairs": 12543856,
+      "differing_share": 0.03109,
+      "percentiles_of_differing": {"50": 11.441902160644531, "75": 12.811882019042969, "90": 19.367137908935547, "95": 28.44580841064453, "99": 34.127464294433594, "99.9": 42.31500244140625},
+      "max_dE": 34.127464294433594,
+      "share_above_max": 0.000131
+     },
+     "1": {
+      "pairs": 8452192,
+      "differing_share": 0.02872,
+      "percentiles_of_differing": {"50": 7.93950080871582, "75": 11.73133659362793, "90": 22.69724464416504, "95": 27.07235336303711, "99": 36.030189514160156, "99.9": 42.31500244140625},
+      "max_dE": 36.030189514160156,
+      "share_above_max": 0.000231
+     },
+     "2": {
+      "pairs": 12758052,
+      "differing_share": 0.04027,
+      "percentiles_of_differing": {"50": 10.684134483337402, "75": 11.895264625549316, "90": 21.826467514038086, "95": 30.06267738342285, "99": 34.127464294433594, "99.9": 42.31500244140625},
+      "max_dE": 34.127464294433594,
+      "share_above_max": 0.000195
+     },
+     "3": {
+      "pairs": 19859716,
+      "differing_share": 0.04348,
+      "percentiles_of_differing": {"50": 12.577096939086914, "75": 16.147363662719727, "90": 26.208261489868164, "95": 30.605390548706055, "99": 41.490718841552734, "99.9": 43.4322395324707},
+      "max_dE": 41.490718841552734,
+      "share_above_max": 0.000373
+     }
+    }
+   },
+   "BRIDGE_SLOTS": [0, 1, 2, 3, 4, 5, 6, 7, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+   "BRIDGE_W": 0.25,
+   "FOREST_DENSITY": {
+    "base": {"taiga": 0.8, "conifer": 0.8, "forest": 0.71, "tropical": 1.0, "mangrove": 1.0, "tropical_dry": 0.36, "savanna": 0.36, "steppe": 0.02, "alpine": 0.02, "tundra": 0.02, "grass": 0.22, "temperate": 0.22, "wetland": 0.22, "paddy": 0.22, "other": 0.22, "desert": 0.0, "snow": 0.0},
+    "blur": 3,
+    "amp": 0.4,
+    "grain": 6.0,
+    "seed": 131,
+    "map_forest_floor": 0.08
+   },
+   "DONOR_WOODLAND": {
+    "slots": [4, 5],
+    "grain": 3.0,
+    "seed": 133,
+    "k": {"0": 1.0, "1": 0.9, "2": 0.9, "3": 0.3, "9": 0.3, "10": 0.7, "11": 0.5},
+    "ground_palette_response": {
+     "enabled": true,
+     "sources": [3, 5]
+    },
+    "open": {
+     "0": [26, 25, 24],
+     "1": [6, 7],
+     "2": [28, 27, 29],
+     "3": [1, 2, 0],
+     "9": [19, 20, 21],
+     "10": [25, 26, 24],
+     "11": [26, 25, 24]
+    }
+   },
+   "SNOW_FUZZ": 180.0,
+   "SNOW_RAMP": 260.0,
+   "STEEP": [110.0, 300.0],
+   "TUNDRA_GRASS_LAT": 62.0,
+   "REPLACEABLE": [0, 1, 2, 3, 19, 20],
+   "DESERT_EXTRA": [4, 5, 21, 22, 27, 28, 29, 30],
+   "DESERT_RAMP": 16,
+   "RELIEF": {
+    "biomes": ["steppe", "grass", "alpine", "tundra", "savanna"],
+    "humid": ["steppe", "grass", "alpine", "tundra", "savanna"],
+    "blur": 3,
+    "valley_r": 24,
+    "rh_ref": 150.0,
+    "river_gain": 3.0,
+    "slope_ref": [40.0, 160.0],
+    "gain": 0.95,
+    "contrast": 2.5,
+    "humid_bias": 0.25,
+    "mix": {
+     "valley_humid": {"28": 0.8, "27": 0.2},
+     "valley_dry": {"21": 0.85, "22": 0.15},
+     "slope": {"19": 0.8, "20": 0.2},
+     "crest": {"2": 0.7, "3": 0.3}
+    },
+    "classes": ["plateau", "alpine", "sgravel", "tundra"],
+    "classes_blend": 0.7
+   },
+   "OPEN_EXTRA": [19, 20, 21, 22, 27, 28, 29, 30],
+   "GRAIN": [4.0, 3.0, 4.0],
+   "FARM_KINDS": [[8, 9], [10, 11], [12, 12]],
+   "FARM_GRAIN": 4.5,
+   "FARM_FRAY": 0.5,
+   "FARM_DAB": 1.0,
+   "FARM_KIND_GRAIN": 3.5,
+   "FARM_FRAY_AMP": 0.1,
+   "FARM_RIM": 0.07,
+   "FARM_INNER": [0.45, 0.55, 1.0],
+   "FARM_RIVER": [1.0, 3.0, 9.0, 16.0],
+   "FARM_REAL_RIVER": [0.5, 2.0, 6.0, 11.0],
+   "FARM_LAKE": [1.0, 3.0, 6.0, 10.0],
+   "FARM_TOWN_CLEAR": 10.0,
+   "FARM_TOWN": [10.0, 13.0, 18.0, 26.0],
+   "FARM_TOWN_KIND": {"farm": 1.0, "city": 0.7, "other": 0.35},
+   "FARM_WEIGHT": {"river": 0.15, "real_river": 0.11, "lake": 0.09, "plain": 0.06, "town": 0.26, "oasis": 0.4},
+   "FARM_ELEV": [2000.0, 2600.0],
+   "FARM_SLOPE": [[0, 0.05, 0.1, 0.2, 0.3], [1, 0.9, 0.45, 0.12, 0]],
+   "TEA_SLOPE": [[0.05, 0.1, 0.35, 0.5], [0, 1, 1, 0]],
+   "TEA_ELEV": [200.0, 400.0, 1800.0, 2200.0],
+   "RICE_ELEV": [900.0, 1300.0],
+   "RICE_LAT": [33.0, 35.0],
+   "PLAIN_ELEV": [[300.0, 700.0], [700.0, 1200.0]],
+   "VALLEY_REL": [60.0, 260.0],
+   "MUD_RIVER": [0.3, 1.0, 2.5, 5.0],
+   "MUD_LAKE": [0.3, 1.0, 3.0, 5.5],
+   "MUD_WEIGHT": {"river": 0.4, "lake": 0.38},
+   "MUD_ELEV": 3200.0,
+   "MUD_GRAIN": 2.5,
+   "OASIS_FARM": 0.9,
+   "ARID_TOWN": [1.2, 2.5, 4.5, 9.0],
+   "TOWN_WARP": 0.35,
+   "FARM_SOURCE": [0, 1, 2, 3, 4, 5, 6, 7, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+  },
+  "oasis_ground": {
+   "DRY_R": 16,
+   "DRY": [0.12, 0.3],
+   "ARID_R": 8,
+   "SEED_CORE": 0.45,
+   "SEED_EDGE": 1.6,
+   "SEED_WARP": 0.35,
+   "SEED_GRAIN": 4.0,
+   "SEED_RIVER": 1.0,
+   "SEED_RISE": [100.0, 350.0],
+   "SEED_SLOPE": [60.0, 160.0],
+   "DRY_ASPECT": [1.5, 80.0, 2],
+   "CONIFER_FLOOR": [1350.0, 1750.0],
+   "CONIFER_FLOOR_DRY": [0.15, 0.5],
+   "CONIFER_FLOOR_FUZZ": 150.0,
+   "CONIFER_FLOOR_OPEN": ["steppe", "grass", "alpine"],
+   "SUB_R": 3,
+   "SUB_KEYS": [10, 11]
+  },
+  "ecotone_bands": {
+   "TREE_LOCAL": 0.5,
+   "TREE_FUZZ": 160.0,
+   "TREE_SIGMA": 90.0,
+   "DITHER_AMP": 0.35,
+   "DITHER_FINE": 0.25,
+   "TUNDRA_FOREST": {
+    "WARP": 150.0,
+    "WGRAIN": 30.0,
+    "REL": [60.0, 180.0],
+    "BAND": 24,
+    "GRAIN": 24.0,
+    "NOISE": 0.37,
+    "FINE": 0.55,
+    "RELIEF": 0.2,
+    "RIVER": 0.3,
+    "RIVER_R": 6,
+    "STRAIGHT": [128, 8, 6.0, 60]
+   }
+  },
+  "polish": {
+   "TOWN_GROUND": {
+    "0": [249, 160],
+    "1": [550, 601],
+    "2": [430, 481],
+    "3": [135, 563]
+   },
+   "TOWN_GROUND_R": [2.5, 5],
+   "WOODLAND_MATERIALS": [4, 5],
+   "FOREST_TOWN": [3, 8, 0.3],
+   "MIRROR_SKIP": [26],
+   "MIRROR_OPEN_RAMP": 8,
+   "REAL_DESERT_FADE": [8, 16],
+   "NONPLAY_RAMP": 4,
+   "DONOR_WARP": 64,
+   "DONOR_SCALE": 36,
+   "DONOR_RELIEF": 0.4,
+   "DONOR_BAND": 10,
+   "DONOR_GRAIN": 3,
+   "ECOTONE": 20,
+   "ECOTONE_GRAIN": 4,
+   "ECO_DETAIL": 0.85,
+   "ECO_DETAIL_R": 2,
+   "LAKE_MOUTH": [12, 16.0],
+   "LAKE_OASIS": 10,
+   "OASIS_REMAP": [
+    [[23, 27], [27, 31]],
+    [[4, 8], [27, 31]]
+   ],
+   "TONAL_BUFFER": [[0, 10, 20, 32, 48, 72], [0.05, 0.1, 0.45, 0.9, 1.0, 0.0]],
+   "BUFFER_DENSE": [3, 0.9],
+   "BUFFER_GRAIN": 3.5,
+   "BUFFER_OCTAVES": 5,
+   "BUFFER_MEANDER": 0.35,
+   "BUFFER_MASS": [64, 0.01, 0.03],
+   "BUFFER_REMAP": {
+    "0": {"27": 30, "28": 29, "0": 7, "1": 7, "19": 7, "20": 30, "23": 30},
+    "1": {"0": 22, "1": 21, "2": 21, "3": 22, "19": 21, "20": 22, "23": 22, "27": 22},
+    "2": {"27": 29, "28": 30, "23": 26, "19": 29, "20": 30, "0": 30, "1": 29},
+    "3": {"23": 26}
+   },
+   "DONOR_SHARES": {
+    "0": [0.1, 0.3, 0.3, 0.3],
+    "1": [0.15, 0.3, 0.3, 0.25]
+   },
+   "DONOR_COMPRESS": {"taiga": 0.3},
+   "TREELINE_DONOR": {
+    "from": ["tundra"],
+    "forest": ["taiga", "conifer"],
+    "band": 8.0,
+    "climates": [3, 1],
+    "grain": 1.5,
+    "seed": 141
+   },
+   "DONOR_PHASE": [307, 451],
+   "DONOR_JITTER": 3,
+   "DONOR_PATCHES": {
+    "0": [[64, 202], [194, 242], [338, 320], [278, 278]],
+    "1": [[100, 422], [32, 572], [38, 482], [110, 476]],
+    "2": [[526, 436], [416, 440], [458, 614]],
+    "3": [[130, 670], [26, 644]],
+    "9": [[262, 538], [290, 542], [266, 584]],
+    "10": [[308, 188], [540, 304]],
+    "11": [[194, 242], [338, 320], [278, 278]]
+   },
+   "OASIS_ELEV": [2200, 2800]
+  },
+  "farm_fields": {
+   "DONORS": {
+    "grain_temperate": ["3k_main_anping_resource_1", "3k_main_chenjun_resource_2", "3k_main_yangzhou_resource_2", "3k_main_weijun_resource_1", "3k_dlc06_xiapi_resource_1", "3k_main_jiangxia_resource_1", "3k_main_henei_resource_1"],
+    "grain_cold": ["3k_main_bajun_resource_1", "3k_main_chengdu_resource_2"],
+    "grain_arid": ["3k_main_anping_resource_1", "3k_main_weijun_resource_1", "3k_main_henei_resource_1", "3k_main_jiangxia_resource_1"],
+    "rice": ["3k_main_cangwu_resource_1", "3k_main_kuaiji_resource_1", "3k_main_nanhai_resource_1", "3k_main_yuzhang_resource_1", "3k_main_jianan_resource_1", "3k_main_jiaozhi_resource_1"],
+    "tea": ["3k_main_changsha_resource_3", "3k_main_zangke_resource_1", "3k_main_jiaozhi_resource_2"]
+   },
+   "KIND_SCALE": {"farm": 1.0, "city": 0.1, "other": 0.0},
+   "CLIMATE_SCALE": {"0": 1.0, "1": 0.35, "2": 1.0, "3": 0.5},
+   "CITY_CLIMATE": {"0": 1.0, "1": 0.0, "2": 1.0, "3": 0.6},
+   "STEPPE_SCALE": {"farm": 0.3, "city": 0.0, "other": 0.0},
+   "ARID_OWN_OASIS": 6,
+   "SLOPE_KEEP": [[0, 0.05, 0.1, 0.2, 0.3, 0.5], [1, 0.9, 0.42, 0.2, 0.05, 0]],
+   "HEIGHT_KEEP": [[-1.5, -0.5, -0.1, 0.5, 1.0, 2.0], [0, 0.12, 1, 1, 0.5, 0]],
+   "TEA_SLOPE": [0.08, 0.45],
+   "TEA_HEIGHT": [0.1, 1.2]
+  },
+  "frontier_forest": {
+   "MIX": {
+    "cold": {"cold_tree_fir_large_1": 0.45, "cold_tree_fir_medium_1": 0.45, "cold_tree_fir_small_1": 0.03, "cold_tree_fir_small_2": 0.03, "cold_tree_fir_medium_2": 0.04},
+    "cold_mixed": {"cold_tree_fir_large_1": 0.38, "cold_tree_fir_medium_1": 0.38, "cold_tree_fir_medium_2": 0.04, "temperate_tree_katsura_medium_1": 0.07, "temperate_tree_katsura_large_1": 0.07, "temperate_tree_katsura_small_1": 0.06},
+    "temperate": {"temperate_tree_katsura_summer_blossom_small_1": 0.11, "temperate_tree_katsura_medium_1a": 0.11, "temperate_tree_katsura_small_1": 0.11, "temperate_tree_katsura_medium_1": 0.11, "temperate_tree_katsura_medium_2": 0.1, "temperate_tree_katsura_large_2": 0.1, "temperate_tree_katsura_large_1": 0.1, "cold_tree_fir_medium_1": 0.1, "cold_tree_fir_large_1": 0.1, "temperate_tree_metasequoia_large_1": 0.03, "temperate_tree_metasequoia_medium_1": 0.03},
+    "subtropical": {"subtropical_castanopsis_medium_1": 0.13, "subtropical_castanopsis_large_1": 0.13, "subtropical_castanopsis_large_2": 0.13, "subtropical_castanopsis_small_2": 0.12, "subtropical_castanopsis_small_1": 0.12, "bamboo_1": 0.09, "bamboo_2": 0.09, "bamboo_3": 0.09, "bamboo_small_1": 0.025, "bamboo_small_2": 0.025, "bamboo_small_3": 0.025},
+    "dry": {"subtropical_castanopsis_medium_1": 0.25, "subtropical_castanopsis_small_1": 0.25, "subtropical_castanopsis_small_2": 0.25, "subtropical_castanopsis_large_1": 0.25}
+   },
+   "STEEP_FACTOR": 0.75,
+   "TOWN_RAMP": [[0, 4, 7, 10], [0.26, 0.64, 0.87, 1.0]],
+   "ROAD_HEX_FACTOR": 0.25,
+   "ROCK_DENSITY": [[0, 0.1, 0.2, 0.4, 0.7, 1.2], [0.001, 0.002, 0.003, 0.006, 0.02, 0.02]],
+   "ROCK_CLUSTER_P": 0.7,
+   "SHRUB_DENSITY": 0.01
+  },
+  "apply_forest_ground": {
+   "TOWN_CLEAR": 7,
+   "CHANGE": {
+    "False": {"grassland": "light_forest", "plains": "light_forest", "hilly_grassland": "hilly_light_forest", "hilly_plains": "hilly_light_forest"},
+    "True": {"grassland": "dense_forest", "plains": "dense_forest", "desert": "dense_forest"}
+   }
+  },
+  "apply_ground_types": {
+   "ELEV_BINS": [200, 500, 1000, 1500, 2000, 3000, 4000],
+   "ROUGH_BINS": [10, 20, 35, 55, 80, 120, 180, 260],
+   "LEARN_MIN": 60,
+   "FAMILY": {"grassland": "flat", "plains": "flat", "light_forest": "flat", "dense_forest": "flat", "hilly_grassland": "hilly", "hilly_plains": "hilly", "hilly_light_forest": "hilly", "hilly_dense_forest": "hilly", "desert": "desert"},
+   "OPEN_FROM": ["plains", "grassland", "hilly_plains", "hilly_grassland", "desert", "tundra", "mountain"],
+   "OPEN_TO": {"flat": "grassland", "hilly": "hilly_grassland", "desert": "desert", "tundra": "tundra"},
+   "FOREST_FROM": ["light_forest", "hilly_light_forest"],
+   "FOREST_TO": {"flat": "light_forest", "hilly": "hilly_light_forest", "desert": "light_forest", "tundra": "light_forest"},
+   "FOREST_BASE": {"light_forest": "grassland", "hilly_light_forest": "hilly_grassland"},
+   "TUNDRA_BIOMES": ["tundra", "snow"],
+   "TUNDRA_ELEV": 4500,
+   "DESERT_BIOMES": ["desert"],
+   "DESERT_EDGE_CLEAR": 8,
+   "DESERT_WATER_CLEAR": 6,
+   "DESERT_OASIS_CLEAR": 4,
+   "OASIS_DISC_REACH": 1.6,
+   "SUPPLY_TOWN_CLEAR": 4,
+   "DITHER": [4.0, 3, 431],
+   "TOWN_RING": 1
+  },
+  "apply_climate": {
+   "TILE_CLIMATE": {"subtropical": 0, "cold": 1, "temperate": 2, "arid": 3},
+   "BLEND_BAND": {"cold": 0, "arid": 1, "temperate": 2, "subtropical": 3},
+   "LAT_BINS": [15, 20, 24, 27, 30, 33, 36, 39, 42, 45],
+   "ELEV_BINS": [200, 500, 1000, 1500, 2000, 3000],
+   "LEARN_MIN": 100,
+   "LEARN_SHARE": 0.6,
+   "WR_TOWN_KEEP": 2,
+   "WETLAND_ECO_FULL": {"319": "Indochina mangroves", "321": "Myanmar Coast mangroves", "322": "Sunda Shelf mangroves", "323": "Sundarbans mangroves", "320": "Indus River Delta-Arabian Sea mangroves", "234": "Irrawaddy freshwater swamp forests", "285": "Tonle Sap freshwater swamp forests", "286": "Tonle Sap-Mekong peat swamp forests", "266": "Red River freshwater swamp forests", "224": "Chao Phraya freshwater swamp forests", "282": "Sundarbans freshwater swamp forests", "264": "Peninsular Malaysian peat swamp forests", "746": "Suiphun-Khanka meadows and forest meadows", "742": "Bohai Sea saline meadow", "748": "Yellow Sea saline meadow", "747": "Tigris-Euphrates alluvial salt marsh"},
+   "WETLAND_ECO_NEAR_WATER": {"741": "Amur meadow steppe", "743": "Nenjiang River grassland"},
+   "NEAR_WATER_ECO_MAX_ELEV": 180,
+   "FULL_MAX_ELEV": 40,
+   "NEAR_WATER_MAX_ELEV": 250,
+   "WATER_REACH": 1,
+   "FLAT_STD": 25,
+   "WETLAND_MATERIAL": 31,
+   "BLEND_CUT": 0.88,
+   "WET_WATER": [[0, 1, 2, 3, 5], [1.0, 1.0, 0.88, 0.68, 0.5]],
+   "WET_NOISE": [5.0, 4, 1.0, 0.81],
+   "WET_SOFT": [8, 0.15]
+  }
+ },
+ "audit_only": {
+  "families": {
+   "arid": [0, 1, 2, 3],
+   "cold": [4, 5, 6, 7],
+   "farm": [8, 9, 10, 11, 12],
+   "road": [13],
+   "mud": [14],
+   "steppe_light": [19, 20],
+   "steppe_dark": [21, 22],
+   "subtropical": [23, 24, 25, 26],
+   "temperate": [27, 28, 29, 30],
+   "wetland": [31],
+   "green": [4, 5, 6, 7, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+  },
+  "landforms": {
+   "high": {
+    "bounds": {
+     "cold": [0.85, 1.0],
+     "subtropical": [0, 0.01]
+    },
+    "banned": [23, 24, 25, 26, 27, 28, 29, 30]
+   },
+   "plateau": {
+    "bounds": {
+     "mud": [0, 0.12],
+     "subtropical": [0, 0.01]
+    },
+    "banned": [23, 24, 25, 26]
+   },
+   "tundra": {
+    "bounds": {
+     "mud": [0, 0.12]
+    },
+    "banned": [23, 24, 25, 26, 27, 28, 29, 30]
+   },
+   "gobi": {
+    "bounds": {
+     "arid": [0.85, 1.0],
+     "steppe_dark": [0, 0.01],
+     "green": [0, 0.01],
+     "mud": [0, 0.08],
+     "farm": [0, 0.03]
+    },
+    "banned": [4, 5, 6, 7, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+   },
+   "drymtn": {
+    "bounds": {
+     "green": [0, 0.15],
+     "mud": [0, 0.05]
+    },
+    "banned": [4, 5, 6, 7, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+   },
+   "sgravel": {"bounds": null, "banned": null},
+   "alpine": {
+    "bounds": {
+     "cold": [0.5, 0.8],
+     "steppe_dark": [0.05, 0.25],
+     "arid": [0, 0.1]
+    },
+    "banned": null
+   },
+   "erg": {
+    "bounds": {
+     "arid": [0.9, 1.0],
+     "green": [0, 0.01],
+     "mud": [0, 0.02],
+     "farm": [0, 0.01]
+    },
+    "banned": [4, 5, 6, 7, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+   },
+   "alpine_meadow": {
+    "bounds": {
+     "cold": [0, 0.3],
+     "steppe_dark": [0.25, 0.6]
+    },
+    "banned": [4, 5, 23, 24, 25, 26]
+   },
+   "alpine_steppe": {
+    "bounds": {
+     "green": [0, 0.1],
+     "arid": [0.3, 0.7]
+    },
+    "banned": [4, 5, 6, 7, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+   },
+   "salt_crust": {
+    "bounds": {
+     "arid": [0.9, 1.0]
+    },
+    "banned": [4, 5, 6, 7, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+   },
+   "yardang": {
+    "bounds": null,
+    "banned": [4, 5, 6, 7, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+   }
+  },
+  "pending": {
+   "paddy_plain": {
+    "banned": [0, 1, 2, 3]
+   }
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "note": "Native-border segments failing audit_native_edges 'tone_cut' on main that are registered, not waived (ground contrast fix design 10.1, details 2026-10-30). Shrink only: a segment leaves when fixed (native edge continuation rule) or when a written 'vanilla discontinuous' rule covers it; never add entries. Listed segments do not gate but are reported every run.",
+ "segments": [
+  {"edge": "east", "hex": [1780, 1051], "why": "real colour cut: vanilla interior all slot 26, canvas 27/28 (index differs by 1)"},
+  {"edge": "east", "hex": [1780, 1059], "why": "class B: vanilla interior discontinuous"},
+  {"edge": "north", "hex": [1764, 1077], "why": "27/28 mix, vanilla interior busy"},
+  {"edge": "north", "hex": [1292, 1077], "why": "winter only: slots 21/27 swap on the border"},
+  {"edge": "north", "hex": [1300, 1077], "why": "winter only: slots 21/27 swap on the border"}
+ ]
+}

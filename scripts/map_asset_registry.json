@@ -1,0 +1,207 @@
+{
+ "_doc": "raster: canvas = pixel density per hex preserved (width ~ W, height ~ H+0.5); world = density per world unit preserved (width ~ W-1, height ~ H+0.5), BC block rounding allowed; aspect = UI image stretched over the map, only the aspect ratio must match the canvas. Every vanilla file under terrain/campaigns/<variant>/ and campaign_maps/<variant>/ of the expanded map must match exactly one rule. status: transformed = must be overridden by the release pack (and raster rules must scale with the canvas); native_ok = intentionally left as vanilla, with the evidence in 'why'; review = unverified, reported as a warning until someone classifies it. Patterns are matched against the lower-case path with the variant replaced by <v>. First match wins.",
+ "variants": [
+  "3k_dlc07_main_map"
+ ],
+ "rules": [
+  {
+   "pattern": "^terrain/campaigns/<v>/lf_height_map\\.dds$",
+   "status": "transformed",
+   "frame": "lf_px",
+   "raster": "canvas"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/lf_height_map\\.compressed_map$",
+   "status": "transformed",
+   "frame": "lf_px"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/lf_sea_height_map\\.dds$",
+   "status": "transformed",
+   "frame": "sea_px",
+   "raster": "canvas"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/lf_sea_height_map\\.compressed_map$",
+   "status": "transformed",
+   "frame": "sea_px"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/lf_normal\\.dds$",
+   "status": "native_ok",
+   "why": "Engine regenerates LF normals at load; GPU capture binds an 8928x6388 R8G8 normal texture (shader-audit/sampling-all-stages.json)."
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/sea_colour\\.dds$",
+   "status": "transformed",
+   "frame": "world",
+   "raster": "world",
+   "handler": "expand_campaign_water_colour.py"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/climate_map\\.cm$",
+   "status": "transformed",
+   "frame": "raw"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/global_map/global_blend\\.dds$",
+   "status": "transformed",
+   "frame": "lf_px",
+   "raster": "canvas"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/global_map/texture_arrays\\.xml$",
+   "status": "native_ok",
+   "why": "Texture array definitions; no coordinates."
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/(global_map/)?tile_list\\.bin$",
+   "status": "transformed",
+   "frame": "tile"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/tile_map\\.(tiles|index)$",
+   "status": "transformed",
+   "frame": "tile"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/global_props\\.bin$",
+   "status": "transformed",
+   "frame": "world"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/global_meshes/(land|sea)_mesh_\\d+\\.(rigid_model_v2|compressed_map)$",
+   "status": "transformed",
+   "frame": "raw"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/height_patches/rivers\\.height_patch_collection$",
+   "status": "transformed",
+   "frame": "world",
+   "handler": "repair_campaign_river_roots.py"
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/height_patches/river_\\d+_patch_\\d+x\\d+\\.compressed_map$",
+   "status": "native_ok",
+   "why": "Patch header x/z are zero; positions come only from the collection file."
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/models/river_\\d+\\.wsmodel\\.rigid_model_v2$",
+   "status": "transformed",
+   "frame": "world",
+   "handler": "repair_campaign_river_roots.py",
+   "why": "Engine places river water by the mesh+628 pivot, not the global_props root matrix."
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/models/river_\\d+\\.wsmodel$",
+   "status": "native_ok",
+   "why": "XML pointing at the geometry path; no coordinates."
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/environment_collection\\.xml$",
+   "status": "transformed",
+   "frame": "world",
+   "why": "ENVIRONMENT_SPHERES carry world x/z centres for regional lighting (z up to 524 > raw map height)."
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/lighting/.*\\.environment_group$",
+   "status": "native_ok",
+   "why": "Lighting parameters; positions live in environment_collection.xml."
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/ambient_light_probes/[a-z]+/\\d+\\.dds$",
+   "status": "review",
+   "why": "12 probe textures per season; how the engine maps them over the world is not verified."
+  },
+  {
+   "pattern": "^terrain/campaigns/<v>/far_terrain_shroud_diffuse_map\\.dds$",
+   "status": "review",
+   "why": "1024x1024 shroud texture; tiling versus world-stretched mapping not verified."
+  },
+  {
+   "pattern": "^campaign_maps/<v>/(map_data\\.esf|pathfinding\\.ppd|hlp_data\\.esf|spd_data\\.esf|trade_routes\\.ptd|display/borders/borders\\.pbd)$",
+   "status": "transformed",
+   "frame": "hex",
+   "variant_only": "3k_dlc07_main_map",
+   "why": "SDK export; every startpos uses 3k_dlc07_main_map."
+  },
+  {
+   "variant_only": "3k_main_map",
+   "pattern": "^campaign_maps/<v>/(map_data\\.esf|pathfinding\\.ppd|hlp_data\\.esf|spd_data\\.esf|trade_routes\\.ptd|display/borders/borders\\.pbd)$",
+   "status": "native_ok",
+   "why": "No startpos references the 3k_main_map campaign data."
+  },
+  {
+   "pattern": "^campaign_maps/<v>/display/trees/trees\\.campaign_tree_list$",
+   "status": "transformed",
+   "frame": "world"
+  },
+  {
+   "pattern": "^campaign_maps/<v>/camera_heightmap\\.png$",
+   "status": "transformed",
+   "frame": "camera_px",
+   "raster": "canvas"
+  },
+  {
+   "pattern": "^campaign_maps/<v>/3k_main_lookup(_minimap)?\\.(dds|tga)$",
+   "status": "transformed",
+   "why": "Root copies of display/regions/3k_main_lookup.*; the strategic-view colour layer read the vanilla root copies (misaligned colours, uncoloured new regions), so the release ships identical copies.",
+   "variant_only": "3k_dlc07_main_map"
+  },
+  {
+   "variant_only": "3k_main_map",
+   "pattern": "^campaign_maps/<v>/3k_main_lookup(_minimap)?\\.(dds|tga)$",
+   "status": "native_ok",
+   "why": "No startpos references the 3k_main_map campaign data; the 190 campaign reads the 3k_dlc07_main_map copies."
+  },
+  {
+   "pattern": "^campaign_maps/<v>/3k_overlay_map\\.dds$",
+   "status": "transformed",
+   "frame": "lookup_px",
+   "raster": "canvas",
+   "handler": "rebuild_campaign_strategic_maps.py"
+  },
+  {
+   "pattern": "^campaign_maps/<v>/(3k_main_minimap|campaign_map_multiplayer|campaign_map_records|custom_battle_map|three_kingdoms_china_map)\\.png$",
+   "status": "transformed",
+   "frame": "lookup_px",
+   "raster": "aspect",
+   "handler": "rebuild_campaign_strategic_maps.py"
+  },
+  {
+   "pattern": "^campaign_maps/<v>/display/(area_of_interest_spline\\.dds|borders/textures/.*\\.dds)$",
+   "status": "native_ok",
+   "why": "Style textures; no world mapping."
+  }
+ ],
+ "db_tables": {
+  "start_pos_characters": {
+   "fields": [
+    "startx",
+    "starty"
+   ],
+   "status": "transformed",
+   "frame": "hex",
+   "placeholders": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ]
+  },
+  "campaign_camera_map_bounds": {
+   "fields": [
+    "min_x",
+    "min_y",
+    "max_x",
+    "max_y"
+   ],
+   "status": "transformed",
+   "frame": "world"
+  }
+ }
+}

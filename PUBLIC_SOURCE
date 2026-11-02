@@ -1,0 +1,2 @@
+This tree is the public source release of TW3K Map Expansion, made by scripts/make_release_snapshot.py.
+Data left out for source compliance is skipped by the build with a WARN (see BUILD.md).

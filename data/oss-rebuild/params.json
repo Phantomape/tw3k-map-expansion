@@ -1,0 +1,675 @@
+{
+ "format": 1,
+ "by": "oss_rebuild_layout.py (packaging session, design work/open-source-cleanup-20261101/p3-generator-design.md in the private repository, approved 2026-11-01)",
+ "seed": 20261101,
+ "rules": {
+  "zone_dilate_hex": 6,
+  "W_slope": 1.0,
+  "W_ridge": 4.0,
+  "W_river": 2.0,
+  "noise_amp": 0.25,
+  "noise_scale_hex": 12,
+  "impassable_relief_quantile_from_neighbours": true,
+  "r_town": 2,
+  "min_town_sep_hex": 3,
+  "port_reach_hex": 4,
+  "fragment_open_max": 30,
+  "small_impassable": 6,
+  "R_zone_km": 60,
+  "filler_target_hex": 450,
+  "region_max_hex": {
+   "korea": 100000,
+   "other": 2000
+  },
+  "filler_noise_amp": 3.0,
+  "filler_noise_scale_hex": 5,
+  "region_max_hex_note": "Korea uncapped: the polygon land all goes to the new regions (a cap left filler gaps that cut North Okjeo off its group road, c8 2026-11-01)",
+  "filler_road_cost": 25.0,
+  "filler_crumb_hex": 5
+ },
+ "korea_polygon_lonlat": [
+  [
+   123.3,
+   39.4
+  ],
+  [
+   123.6,
+   40.6
+  ],
+  [
+   124.2,
+   41.6
+  ],
+  [
+   124.9,
+   42.4
+  ],
+  [
+   126.4,
+   42.9
+  ],
+  [
+   128.2,
+   43.0
+  ],
+  [
+   129.6,
+   43.6
+  ],
+  [
+   131.4,
+   43.6
+  ],
+  [
+   132.2,
+   42.3
+  ],
+  [
+   131.0,
+   38.0
+  ],
+  [
+   130.5,
+   34.6
+  ],
+  [
+   128.5,
+   33.6
+  ],
+  [
+   126.0,
+   33.4
+  ],
+  [
+   124.2,
+   34.2
+  ],
+  [
+   123.6,
+   37.0
+  ]
+ ],
+ "removed_land_prefixes_korea": [
+  "tw3k_hist_baek_",
+  "tw3k_hist_baekje_",
+  "tw3k_hist_hanseong_",
+  "tw3k_hist_gyeongju_",
+  "tw3k_hist_kimhae_",
+  "tw3k_hist_ye_",
+  "tw3k_hist_lelang_",
+  "tw3k_hist_jinbeongun_",
+  "tw3k_hist_dongye_",
+  "tw3k_hist_dongokjeo_",
+  "tw3k_hist_north_okjeo_",
+  "tw3k_hist_hyunto_",
+  "tw3k_hist_goguryeo_"
+ ],
+ "removed_land_keys_other": [
+  "tw3k_hist_hanyang_capital",
+  "tw3k_hist_hanyang_resource_1",
+  "tw3k_hist_xiping_capital",
+  "tw3k_hist_xiping_resource_1",
+  "tw3k_hist_xiping_resource_2",
+  "tw3k_hist_wuwei_resource_3",
+  "tw3k_hist_wuyuan_capital",
+  "tw3k_hist_wuyuan_resource_1",
+  "tw3k_hist_xi_capital",
+  "tw3k_hist_xi_resource_1"
+ ],
+ "removed_provinces": [
+  "tw3k_hist_province_baek",
+  "tw3k_hist_province_baekje",
+  "tw3k_hist_province_hanseong",
+  "tw3k_hist_province_gyeongju",
+  "tw3k_hist_province_kimhae",
+  "tw3k_hist_province_ye",
+  "tw3k_hist_province_lelang",
+  "tw3k_hist_province_dongye",
+  "tw3k_hist_province_dongokjeo",
+  "tw3k_hist_province_north_okjeo",
+  "tw3k_hist_province_hyunto",
+  "tw3k_hist_province_goguryeo",
+  "tw3k_hist_province_hanyang",
+  "tw3k_hist_province_xiping",
+  "tw3k_hist_province_wuyuan",
+  "tw3k_hist_province_xi"
+ ],
+ "coast_tolerance_hex": 1,
+ "filler_region": "3k_main_reg_non_playable",
+ "merge_into": {
+  "tw3k_hist_xi_capital": "tw3k_hist_zhangye_",
+  "tw3k_hist_xi_resource_1": "tw3k_hist_zhangye_"
+ },
+ "removed_seas": [
+  "tw3k_hist_sea_baek",
+  "tw3k_hist_sea_east_coast",
+  "tw3k_hist_sea_south_korea",
+  "tw3k_hist_sea_west_korea"
+ ],
+ "new_seas": [
+  {
+   "key": "tw3k_kr_sea_west",
+   "name": "朝鲜西海",
+   "bearing_deg": [
+    225,
+    360
+   ],
+   "bearing_wrap": [
+    0,
+    20
+   ]
+  },
+  {
+   "key": "tw3k_kr_sea_south",
+   "name": "朝鲜海峡",
+   "bearing_deg": [
+    135,
+    225
+   ]
+  },
+  {
+   "key": "tw3k_kr_sea_east",
+   "name": "朝鲜东海",
+   "bearing_deg": [
+    20,
+    135
+   ]
+  }
+ ],
+ "sea_centre_lonlat": [
+  127.8,
+  36.8
+ ],
+ "korea_fit": {
+  "hex_box": [
+   1560,
+   1780,
+   800,
+   1080
+  ],
+  "neck_lat": 39.6,
+  "south_lat": 33.5,
+  "seed": [
+   1680,
+   900
+  ],
+  "min_iou": 0.8,
+  "fade_lat": [
+   39.1,
+   40.1
+  ],
+  "frame": "vanilla land/sea (whitelisted, unedited): the fit never sees the canvas kind it is used to check"
+ },
+ "groups": [
+  {
+   "province": "tw3k_kr_province_lelang_north",
+   "name": "乐浪郡（北部）",
+   "zone": "korea",
+   "regions": [
+    {
+     "key": "tw3k_kr_lelang_north_capital",
+     "name": "朝鲜",
+     "site": "朝鲜县",
+     "lonlat": [
+      125.77,
+      38.995
+     ],
+     "unc_km": 5,
+     "capital": true
+    },
+    {
+     "key": "tw3k_kr_lelang_north_farm",
+     "name": "浿水",
+     "site": "浿水县",
+     "lonlat": [
+      125.6,
+      39.4
+     ],
+     "unc_km": 50,
+     "resource": "粮田"
+    },
+    {
+     "key": "tw3k_kr_lelang_north_fish",
+     "name": "占蝉",
+     "site": "占蝉（粘蝉）县",
+     "lonlat": [
+      125.2,
+      38.95
+     ],
+     "unc_km": 15,
+     "resource": "渔港"
+    }
+   ]
+  },
+  {
+   "province": "tw3k_kr_province_lelang_south",
+   "name": "乐浪郡（南部）",
+   "zone": "korea",
+   "regions": [
+    {
+     "key": "tw3k_kr_lelang_south_capital",
+     "name": "带方",
+     "site": "带方县",
+     "lonlat": [
+      125.8,
+      38.47
+     ],
+     "unc_km": 3,
+     "capital": true
+    },
+    {
+     "key": "tw3k_kr_lelang_south_farm",
+     "name": "屯有",
+     "site": "屯有县",
+     "lonlat": [
+      125.75,
+      38.7
+     ],
+     "unc_km": 10,
+     "resource": "粮田"
+    },
+    {
+     "key": "tw3k_kr_lelang_south_salt",
+     "name": "昭明",
+     "site": "昭明县",
+     "lonlat": [
+      125.48,
+      38.35
+     ],
+     "unc_km": 15,
+     "resource": "盐场"
+    }
+   ]
+  },
+  {
+   "province": "tw3k_kr_province_koguryo",
+   "name": "高句丽",
+   "zone": "korea",
+   "regions": [
+    {
+     "key": "tw3k_kr_koguryo_capital",
+     "name": "国内城",
+     "site": "高句丽王都（国内城/丸都，集安）",
+     "lonlat": [
+      126.18,
+      41.13
+     ],
+     "unc_km": 5,
+     "capital": true
+    },
+    {
+     "key": "tw3k_kr_koguryo_pasture",
+     "name": "卒本",
+     "site": "卒本（桓仁五女山城一带）",
+     "lonlat": [
+      125.4,
+      41.32
+     ],
+     "unc_km": 8,
+     "resource": "马场"
+    }
+   ]
+  },
+  {
+   "province": "tw3k_kr_province_okjeo",
+   "name": "沃沮",
+   "zone": "korea",
+   "regions": [
+    {
+     "key": "tw3k_kr_okjeo_capital",
+     "name": "东沃沮",
+     "site": "东沃沮（南沃沮）",
+     "lonlat": [
+      127.54,
+      39.92
+     ],
+     "unc_km": 15,
+     "capital": true
+    },
+    {
+     "key": "tw3k_kr_okjeo_lumber",
+     "name": "北沃沮",
+     "site": "北沃沮（置沟娄）",
+     "lonlat": [
+      130.0,
+      42.3
+     ],
+     "unc_km": 80,
+     "resource": "林场"
+    }
+   ]
+  },
+  {
+   "province": "tw3k_kr_province_yemaek",
+   "name": "濊",
+   "zone": "korea",
+   "regions": [
+    {
+     "key": "tw3k_kr_yemaek_capital",
+     "name": "不耐",
+     "site": "不耐（东濊）",
+     "lonlat": [
+      127.51,
+      39.03
+     ],
+     "unc_km": 30,
+     "capital": true
+    },
+    {
+     "key": "tw3k_kr_yemaek_fish",
+     "name": "江陵濊",
+     "site": "江陵濊",
+     "lonlat": [
+      128.9,
+      37.76
+     ],
+     "unc_km": 25,
+     "resource": "渔港"
+    }
+   ]
+  },
+  {
+   "province": "tw3k_kr_province_mahan",
+   "name": "马韩",
+   "zone": "korea",
+   "regions": [
+    {
+     "key": "tw3k_kr_mahan_capital",
+     "name": "目支国",
+     "site": "目支国",
+     "lonlat": [
+      127.17,
+      36.88
+     ],
+     "unc_km": 30,
+     "capital": true
+    },
+    {
+     "key": "tw3k_kr_mahan_rice",
+     "name": "伯济国",
+     "site": "伯济国",
+     "lonlat": [
+      127.12,
+      37.531
+     ],
+     "unc_km": 8,
+     "resource": "稻田"
+    },
+    {
+     "key": "tw3k_kr_mahan_lumber",
+     "name": "汉北国",
+     "site": "臣濆沽国",
+     "lonlat": [
+      127.51,
+      37.83
+     ],
+     "unc_km": 20,
+     "resource": "林场"
+    },
+    {
+     "key": "tw3k_kr_mahan_south_rice",
+     "name": "荣山江诸国",
+     "site": "荣山江流域诸国（如不弥、新弥诸国）",
+     "lonlat": [
+      126.66,
+      34.91
+     ],
+     "unc_km": 5,
+     "resource": "稻田"
+    }
+   ]
+  },
+  {
+   "province": "tw3k_kr_province_jinhan",
+   "name": "辰韩",
+   "zone": "korea",
+   "regions": [
+    {
+     "key": "tw3k_kr_jinhan_capital",
+     "name": "斯卢国",
+     "site": "斯卢国",
+     "lonlat": [
+      129.224,
+      35.833
+     ],
+     "unc_km": 5,
+     "capital": true
+    },
+    {
+     "key": "tw3k_kr_jinhan_farm",
+     "name": "已柢国",
+     "site": "已柢国",
+     "lonlat": [
+      128.73,
+      35.65
+     ],
+     "unc_km": 40,
+     "resource": "粮田"
+    },
+    {
+     "key": "tw3k_kr_jinhan_fish",
+     "name": "勤耆国",
+     "site": "勤耆国",
+     "lonlat": [
+      129.34,
+      36.1
+     ],
+     "unc_km": 5,
+     "resource": "渔港"
+    }
+   ]
+  },
+  {
+   "province": "tw3k_kr_province_byeonhan",
+   "name": "弁韩",
+   "zone": "korea",
+   "regions": [
+    {
+     "key": "tw3k_kr_byeonhan_capital",
+     "name": "狗邪国",
+     "site": "狗邪国",
+     "lonlat": [
+      128.873,
+      35.236
+     ],
+     "unc_km": 5,
+     "capital": true
+    },
+    {
+     "key": "tw3k_kr_byeonhan_iron",
+     "name": "安邪国",
+     "site": "安邪国",
+     "lonlat": [
+      128.41,
+      35.27
+     ],
+     "unc_km": 10,
+     "resource": "矿场"
+    },
+    {
+     "key": "tw3k_kr_byeonhan_fish",
+     "name": "古资弥冻国",
+     "site": "弁辰古资弥冻国",
+     "lonlat": [
+      128.32,
+      34.97
+     ],
+     "unc_km": 20,
+     "resource": "渔港"
+    }
+   ]
+  },
+  {
+   "province": "tw3k_rb_province_xuantu",
+   "name": "玄菟郡",
+   "zone": "korea",
+   "regions": [
+    {
+     "key": "tw3k_rb_xuantu_capital",
+     "name": "高句骊",
+     "site": "高句骊县（第三玄菟郡治）",
+     "lonlat": [
+      123.915,
+      41.865
+     ],
+     "unc_km": 8,
+     "capital": true
+    }
+   ]
+  },
+  {
+   "province": "tw3k_rb_province_jincheng_west",
+   "name": "金城西部",
+   "zone": "other",
+   "regions": [
+    {
+     "key": "tw3k_rb_jincheng_west_capital",
+     "name": "临羌",
+     "sitekey": "tw3k_hist_xiping_capital",
+     "lonlat": [
+      101.3,
+      36.64
+     ],
+     "unc_km": 15,
+     "capital": true
+    },
+    {
+     "key": "tw3k_rb_jincheng_west_livestock",
+     "name": "破羌",
+     "sitekey": "tw3k_hist_xiping_resource_1",
+     "lonlat": [
+      102.56,
+      36.47
+     ],
+     "unc_km": 12,
+     "resource": "牧场"
+    },
+    {
+     "key": "tw3k_rb_jincheng_west_iron",
+     "name": "安夷",
+     "sitekey": "tw3k_hist_xiping_resource_2",
+     "lonlat": [
+      102.1,
+      36.5
+     ],
+     "unc_km": 12,
+     "resource": "矿场"
+    }
+   ]
+  },
+  {
+   "province": "tw3k_rb_province_wuyuan",
+   "name": "五原郡",
+   "zone": "other",
+   "regions": [
+    {
+     "key": "tw3k_rb_wuyuan_capital",
+     "name": "九原",
+     "sitekey": "tw3k_hist_wuyuan_capital",
+     "lonlat": [
+      109.82,
+      40.58
+     ],
+     "unc_km": 4,
+     "capital": true
+    },
+    {
+     "key": "tw3k_rb_wuyuan_pasture",
+     "name": "五原·马场",
+     "sitekey": "tw3k_hist_wuyuan_resource_1",
+     "lonlat": [
+      109.707,
+      41.072
+     ],
+     "unc_km": 30,
+     "resource": "马场"
+    }
+   ]
+  }
+ ],
+ "join_existing_province": [],
+ "resource_templates": {
+  "粮田": "3k_resource_wood_farms_grain",
+  "稻田": "3k_resource_wood_farms_rice",
+  "马场": "3k_resource_fire_northern_horses",
+  "牧场": "3k_resource_wood_livestock",
+  "林场": "3k_resource_wood_lumber_pine",
+  "矿场": "3k_resource_fire_iron",
+  "盐场": "3k_resource_water_salt",
+  "渔港": "3k_resource_wood_fish",
+  "工具作坊": "(gameplay fields of the replaced region: no non-imported tools template exists)"
+ },
+ "traits": {
+  "drop_stems": [
+   "baek",
+   "baekje",
+   "dongokjeo",
+   "dongye",
+   "goguryeo",
+   "gyeongju",
+   "hanseong",
+   "hanyang",
+   "hyunto",
+   "jinbeongun",
+   "kimhae",
+   "lelang",
+   "north_okjeo",
+   "xi",
+   "xiping",
+   "ye"
+  ],
+  "classes": {
+   "peninsula": [
+    "lelang_north",
+    "lelang_south",
+    "yemaek",
+    "mahan",
+    "jinhan",
+    "byeonhan"
+   ],
+   "northeast": [
+    "okjeo",
+    "koguryo",
+    "xuantu"
+   ],
+   "mountain": [
+    "jincheng_west"
+   ]
+  },
+  "rice": [
+   "mahan",
+   "jinhan",
+   "byeonhan"
+  ],
+  "walled": [
+   "lelang_north",
+   "lelang_south",
+   "koguryo",
+   "jinhan",
+   "byeonhan",
+   "xuantu"
+  ],
+  "why": "peninsula = 6 groups / 18 regions (coordinator via integration review 2026-11-01); Okjeo and Koguryo northeast as dongokjeo / goguryeo were; Xuantu northeast as hyunto was; rice = the three Han; walled = Lelang (two), Koguryo, Saro (Jinhan), Guya (Byeonhan), Xuantu, as the old lelang / goguryeo / gyeongju / kimhae / hyunto"
+ },
+ "gaya": {
+  "old_province_stem": "kimhae",
+  "new_province_key": "tw3k_kr_province_byeonhan",
+  "new_province_stem": "byeonhan",
+  "new_capital_key": "tw3k_kr_byeonhan_capital",
+  "note": "prepare_faction_foundations.py line 35 binds gaya to kimhae; the faction file is not ours (known open item)"
+ },
+ "province_fields": {
+  "kind": "independent_province",
+  "imported": false,
+  "donor": "3k_main_province_youzhou",
+  "owner_faction": "3k_main_faction_han_empire"
+ },
+ "not_rebuilt_notes": {
+  "候城县": "falls on vanilla playable 3k_dlc06_liaodong_capital (Shenyang): vanilla regions stay; covered by vanilla Liaodong",
+  "豲道": "cancelled (site-decisions: Nan'an commandery from 188); land to neighbours",
+  "候官/左骑": "merged into Zhangye (site-decisions 4): land to neighbours, no new region",
+  "不斯国": "no region (site-decisions: Jinhan second region = 已柢)",
+  "冀县（汉阳）": "cancelled (user 2026-11-01): the real seat lies in vanilla Wudu (playable); land back to non-playable filler",
+  "武威·工具作坊": "cancelled (user 2026-11-01): the real Guzang is the vanilla Wuwei capital; land back to filler, vanilla Wuwei = capital + resource_1/2"
+ }
+}

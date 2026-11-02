@@ -1,0 +1,1888 @@
+{
+ "version": 1,
+ "fixed": [
+  {
+   "name": "bogda",
+   "cam": [
+    467.0,
+    845.0,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "bogda",
+   "why": "博格达南坡：干旱高山是否不再发绿",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:bogda"
+   ],
+   "also_why": "边疆山体摆件疏密：会不会显得堆砌（v22 起，密度按原版放置率×倍数保留 v21 水平，总协调 2026-10-31；堆砌就按评审结论调 MOUNTAIN_TARGET 的 scale）",
+   "checks": [
+    "mountain-density"
+   ]
+  },
+  {
+   "name": "dunhuang",
+   "cam": [
+    530.645,
+    771.894,
+    40.0,
+    0.0,
+    30.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "dunhuang",
+   "why": "敦煌：荒漠和绿洲的交界；有没有零碎绿斑",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048j.md:dunhuang",
+    "analysis/live-check-canvas-2048l.md:hexi-road",
+    "analysis/live-check-canvas-2048m.md:dunhuang",
+    "analysis/live-check-canvas-2048o.md:dunhuang",
+    "analysis/live-check-canvas-2048p.md:dunhuang"
+   ]
+  },
+  {
+   "name": "east-tianzhu",
+   "cam": [
+    491.26,
+    456.28,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "east-tianzhu",
+   "why": "东天竺平原：森林是否少了；稻田里有没有看得出的镜像重复",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048j.md:east-tianzhu",
+    "analysis/live-check-canvas-2048p.md:east-tianzhu"
+   ],
+   "also_why": "边疆山体摆件疏密：会不会显得堆砌（v22 起，密度按原版放置率×倍数保留 v21 水平，总协调 2026-10-31；堆砌就按评审结论调 MOUNTAIN_TARGET 的 scale）",
+   "checks": [
+    "mountain-density"
+   ]
+  },
+  {
+   "name": "egobi-1",
+   "cam": [
+    874.6,
+    841.6,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "egobi-1",
+   "why": "东戈壁：上一版的暗绿大斑和零碎绿斑是否消失",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:egobi-1"
+   ],
+   "also_why": "边疆山体摆件疏密：会不会显得堆砌（v22 起，密度按原版放置率×倍数保留 v21 水平，总协调 2026-10-31；堆砌就按评审结论调 MOUNTAIN_TARGET 的 scale）",
+   "checks": [
+    "mountain-density"
+   ]
+  },
+  {
+   "name": "egobi-2",
+   "cam": [
+    826.6,
+    850.1,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "egobi-2",
+   "why": "同上",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:egobi-2"
+   ]
+  },
+  {
+   "name": "egobi-3",
+   "cam": [
+    787.9,
+    856.3,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "egobi-3",
+   "why": "同上",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:egobi-3"
+   ]
+  },
+  {
+   "name": "fajiang",
+   "cam": [
+    501.28,
+    557.63,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "fajiang",
+   "why": "发羌：同上",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:fajiang"
+   ]
+  },
+  {
+   "name": "funan",
+   "cam": [
+    737.564,
+    206.943,
+    50.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "funan",
+   "why": "扶南：湄公河是否从都城旁连续流过、一直通到三角洲和海",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048j.md:funan",
+    "analysis/live-check-canvas-2048k.md:funan",
+    "analysis/live-check-canvas-2048l.md:funan",
+    "analysis/live-check-canvas-2048m.md:funan",
+    "analysis/live-check-canvas-2048n.md:funan",
+    "analysis/live-check-canvas-2048o.md:funan",
+    "analysis/live-check-canvas-2048p.md:funan"
+   ]
+  },
+  {
+   "name": "hetau-start",
+   "cam": [
+    800.307,
+    764.186,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "hetau-start",
+   "why": "朔方附近由游戏返回的有效落点1196,991出发；只读地图中最近的rivernavigableshallows标记位于1226,944，未找到清单所述两格内1…",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok"
+  },
+  {
+   "name": "jiankun",
+   "cam": [
+    523.97,
+    1001.57,
+    50.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "jiankun",
+   "why": "坚昆马场：绕城的一段比较长（15 格），看是否自然",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:jiankun"
+   ]
+  },
+  {
+   "name": "korea-overview",
+   "cam": [
+    1110.0,
+    730.0,
+    90.0,
+    0.0,
+    60.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "korea-overview",
+   "why": "朝鲜半岛：西岸、东岸的海岸地块；分界线",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048m.md:korea-overview",
+    "analysis/live-check-canvas-2048n.md:korea-overview",
+    "analysis/live-check-canvas-2048o.md:korea-overview",
+    "analysis/live-check-canvas-2048p.md:korea-overview"
+   ]
+  },
+  {
+   "name": "lin_yi",
+   "cam": [
+    797.637,
+    300.202,
+    50.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "lin_yi",
+   "why": "岸线外仍有一条与岸平行的长浅绿色带，局部尖角/断续，与陆岸之间有深色水面（清单已知）；城北海岸窄浅色边可见。",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048j.md:linyi",
+    "analysis/live-check-canvas-2048k.md:linyi",
+    "analysis/live-check-canvas-2048l.md:linyi",
+    "analysis/live-check-canvas-2048m.md:linyi",
+    "analysis/live-check-canvas-2048o.md:linyi",
+    "analysis/live-check-canvas-2048p.md:linyi"
+   ]
+  },
+  {
+   "name": "piaoyue",
+   "cam": [
+    550.0,
+    349.91,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "piaoyue",
+   "why": "僄越：同上",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:piaoyue"
+   ]
+  },
+  {
+   "name": "shan",
+   "cam": [
+    564.69,
+    446.26,
+    50.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "shan",
+   "why": "掸国都城：绕城的一段比较长（13 格），看是否自然",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:shan"
+   ]
+  },
+  {
+   "name": "tarim-west",
+   "cam": [
+    313.71,
+    801.57,
+    90.0,
+    0.0,
+    60.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "tarim-west",
+   "why": "塔里木以西：荒漠里的绿斑",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048n.md:tarim-west",
+    "analysis/live-check-canvas-2048o.md:tarim-west",
+    "analysis/live-check-canvas-2048p.md:tarim-west"
+   ],
+   "also_why": "边疆山体摆件疏密：会不会显得堆砌（v22 起，密度按原版放置率×倍数保留 v21 水平，总协调 2026-10-31；堆砌就按评审结论调 MOUNTAIN_TARGET 的 scale）",
+   "checks": [
+    "mountain-density"
+   ]
+  },
+  {
+   "name": "tuoba",
+   "cam": [
+    981.19,
+    934.13,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "tuoba",
+   "why": "拓跋：同上",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:tuoba"
+   ]
+  },
+  {
+   "name": "turpan",
+   "cam": [
+    469.0,
+    829.0,
+    50.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "turpan",
+   "why": "吐鲁番盆地：交河、高昌、鲁克沁（柳中屯田已挪到这里）、托克逊有没有成片的绿洲（而不是碎绿）",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:turpan"
+   ]
+  },
+  {
+   "name": "wr-trees",
+   "cam": [
+    347.0,
+    866.0,
+    20.0,
+    0.0,
+    12.0
+   ],
+   "group": "frontier",
+   "source": "analysis/live-check-canvas-2048t.md",
+   "label": "wr-trees",
+   "why": "西域树林：树根贴地，不悬空、不埋地",
+   "sets": [
+    "v20-precheck"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048t.md:wr-trees"
+   ]
+  },
+  {
+   "name": "border-north",
+   "cam": [
+    800.0,
+    1000.0,
+    120.0,
+    0.0,
+    70.0
+   ],
+   "group": "native-ring",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "border-north",
+   "why": "漠北：同上",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:border-north"
+   ]
+  },
+  {
+   "name": "border-north-flat",
+   "cam": [
+    800.0,
+    1000.0,
+    120.0,
+    0.0,
+    150.0
+   ],
+   "group": "native-ring",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "border-north-flat",
+   "why": "平面战略图可见湖东南、河两侧及下方的深色锯齿地区分界，雾区也能辨认部分线条。",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok"
+  },
+  {
+   "name": "border-south",
+   "cam": [
+    600.0,
+    400.0,
+    120.0,
+    0.0,
+    70.0
+   ],
+   "group": "native-ring",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "border-south",
+   "why": "西南、中南半岛：同上",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:border-south"
+   ]
+  },
+  {
+   "name": "border-south-flat",
+   "cam": [
+    600.0,
+    400.0,
+    120.0,
+    0.0,
+    150.0
+   ],
+   "group": "native-ring",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "border-south-flat",
+   "why": "平面战略视图可清楚看到西南与中南半岛多个深色地区边界；林区内部能见独立多边形线条。",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok"
+  },
+  {
+   "name": "border-west",
+   "cam": [
+    450.0,
+    850.0,
+    120.0,
+    0.0,
+    70.0
+   ],
+   "group": "native-ring",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "border-west",
+   "why": "西域：新地区之间有没有分界线",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:border-west",
+    "analysis/live-check-snow-test.md:west-overview"
+   ]
+  },
+  {
+   "name": "border-west-flat",
+   "cam": [
+    450.0,
+    850.0,
+    120.0,
+    0.0,
+    150.0
+   ],
+   "group": "native-ring",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "border-west-flat",
+   "why": "平面战略视图可清楚看到西域城镇之间连续深色锯齿状地区边界；多个地区分成独立多边形。",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok"
+  },
+  {
+   "name": "issyk-kul",
+   "cam": [
+    353.591,
+    810.42,
+    30.0,
+    0.0,
+    22.0
+   ],
+   "group": "lake",
+   "source": "analysis/live-check-canvas-2048t.md",
+   "label": "bosten",
+   "why": "伊塞克湖（乌孙）湖岸与水面；原名 bosten 是误名（整合审查 10-31）",
+   "sets": [
+    "v20-precheck"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048i.md:bosten",
+    "analysis/live-check-canvas-2048t.md:bosten"
+   ]
+  },
+  {
+   "name": "dingling",
+   "cam": [
+    765.6,
+    999.26,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "lake",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "dingling",
+   "why": "丁零：河是否从城旁连续流过",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:dingling"
+   ]
+  },
+  {
+   "name": "wusun-mid",
+   "cam": [
+    346.421,
+    827.387,
+    50.0,
+    0.0,
+    35.0
+   ],
+   "group": "lake",
+   "source": "analysis/live-check-canvas-2048t.md",
+   "label": "wusun-mid",
+   "why": "伊塞克湖湖岸",
+   "sets": [
+    "v20-precheck"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048n.md:wusun",
+    "analysis/live-check-canvas-2048o.md:wusun",
+    "analysis/live-check-canvas-2048p-result.json:wusun",
+    "analysis/live-check-canvas-2048p.md:wusun",
+    "analysis/live-check-canvas-2048t.md:wusun-mid"
+   ]
+  },
+  {
+   "name": "amur",
+   "cam": [
+    1017.237,
+    941.071,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "river",
+   "source": "analysis/live-check-canvas-2048t.md",
+   "label": "amur",
+   "why": "黑龙江：河岸贴合，没有三角接缝",
+   "sets": [
+    "v20-precheck"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048m.md:amur",
+    "analysis/live-check-canvas-2048n.md:amur",
+    "analysis/live-check-canvas-2048o.md:amur",
+    "analysis/live-check-canvas-2048p-result.json:amur",
+    "analysis/live-check-canvas-2048p.md:amur",
+    "analysis/live-check-canvas-2048t.md:amur"
+   ],
+   "also_why": "草原山体分族验收：镜头附近剩下的干旱山体（色楞格 25.2 wu 处得分 .096；阿穆尔 38.3 wu 处呼伦贝尔干草原 .049）画面上是否突兀（总协调 2026-10-31，阈值保持 0.1；进 v22 之后的包）",
+   "checks": [
+    "steppe-mountains"
+   ]
+  },
+  {
+   "name": "ganges",
+   "cam": [
+    478.582,
+    480.555,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "river",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "ganges",
+   "why": "恒河：接缝；下游宽度",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048m.md:ganges",
+    "analysis/live-check-canvas-2048n.md:ganges",
+    "analysis/live-check-canvas-2048o.md:ganges",
+    "analysis/live-check-canvas-2048p.md:ganges"
+   ]
+  },
+  {
+   "name": "irtysh",
+   "cam": [
+    478.582,
+    922.958,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "river",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "irtysh",
+   "why": "额尔齐斯一带：河面的浅色横斜线；湖岸",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048m.md:irtysh",
+    "analysis/live-check-canvas-2048n.md:irtysh",
+    "analysis/live-check-canvas-2048o.md:irtysh",
+    "analysis/live-check-canvas-2048p.md:irtysh"
+   ],
+   "also_why": "边疆山体摆件疏密：会不会显得堆砌（v22 起，密度按原版放置率×倍数保留 v21 水平，总协调 2026-10-31；堆砌就按评审结论调 MOUNTAIN_TARGET 的 scale）",
+   "checks": [
+    "mountain-density"
+   ]
+  },
+  {
+   "name": "mekong",
+   "cam": [
+    754.251,
+    253.573,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "river",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "mekong",
+   "why": "湄公河：接缝和水花",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048m.md:mekong",
+    "analysis/live-check-canvas-2048n.md:mekong",
+    "analysis/live-check-canvas-2048o.md:mekong",
+    "analysis/live-check-canvas-2048p.md:mekong"
+   ]
+  },
+  {
+   "name": "selenga",
+   "cam": [
+    740.901,
+    980.378,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "river",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "selenga",
+   "why": "色楞格河：支河上游和湖面是否连上；支河中部的浅色矩形横截是否消失",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048m.md:selenga",
+    "analysis/live-check-canvas-2048n.md:selenga",
+    "analysis/live-check-canvas-2048o.md:selenga",
+    "analysis/live-check-canvas-2048p.md:selenga"
+   ],
+   "also_why": "边疆山体摆件疏密：会不会显得堆砌（v22 起，密度按原版放置率×倍数保留 v21 水平，总协调 2026-10-31；堆砌就按评审结论调 MOUNTAIN_TARGET 的 scale）；草原山体分族验收：镜头附近剩下的干旱山体（色楞格 25.2 wu 处得分 .096；阿穆尔 38.3 wu 处呼伦贝尔干草原 .049）画面上是否突兀（总协调 2026-10-31，阈值保持 0.1；进 v22 之后的包）",
+   "checks": [
+    "mountain-density",
+    "steppe-mountains"
+   ]
+  },
+  {
+   "name": "yangtze",
+   "cam": [
+    880.0,
+    560.0,
+    60.0,
+    0.0,
+    45.0
+   ],
+   "group": "river",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "yangtze",
+   "why": "原版长江：没有被改坏",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048n.md:yellowriver",
+    "analysis/live-check-canvas-2048o.md:yangtze",
+    "analysis/live-check-canvas-2048p.md:yangtze"
+   ]
+  },
+  {
+   "name": "yellowriver",
+   "cam": [
+    850.0,
+    650.0,
+    60.0,
+    0.0,
+    45.0
+   ],
+   "group": "river",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "yellowriver",
+   "why": "原版黄河：没有被改坏",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048o.md:yellowriver",
+    "analysis/live-check-canvas-2048p.md:yellowriver"
+   ]
+  },
+  {
+   "name": "town-dunhuang",
+   "cam": [
+    530.645,
+    771.894,
+    15.0,
+    0.0,
+    8.0
+   ],
+   "group": "town",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "town-dunhuang",
+   "why": "敦煌",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:town-dunhuang"
+   ]
+  },
+  {
+   "name": "town-funan",
+   "cam": [
+    737.564,
+    206.943,
+    15.0,
+    0.0,
+    8.0
+   ],
+   "group": "town",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "town-funan",
+   "why": "扶南",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:town-funan"
+   ]
+  },
+  {
+   "name": "town-lelang",
+   "cam": [
+    1087.99,
+    724.493,
+    15.0,
+    0.0,
+    8.0
+   ],
+   "group": "town",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "town-lelang",
+   "why": "乐浪",
+   "sets": [
+    "calib"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p.md:town-lelang"
+   ]
+  },
+  {
+   "name": "town-wusun",
+   "cam": [
+    346.421,
+    827.387,
+    15.0,
+    0.0,
+    8.0
+   ],
+   "group": "town",
+   "source": "analysis/live-check-canvas-2048t.md",
+   "label": "town-wusun",
+   "why": "乌孙：同上",
+   "sets": [
+    "v20-precheck"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p-result.json:town-wusun",
+    "analysis/live-check-canvas-2048p.md:town-wusun",
+    "analysis/live-check-canvas-2048t.md:town-wusun"
+   ]
+  },
+  {
+   "name": "town-yanqi",
+   "cam": [
+    435.196,
+    817.753,
+    15.0,
+    0.0,
+    8.0
+   ],
+   "group": "town",
+   "source": "analysis/live-check-canvas-2048t.md",
+   "label": "town-yanqi",
+   "why": "焉耆：城周围没有假悬崖，地面平顺",
+   "sets": [
+    "v20-precheck"
+   ],
+   "impact": [
+    "mesh-bake-1"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048p-result.json:town-yanqi",
+    "analysis/live-check-canvas-2048p.md:town-yanqi",
+    "analysis/live-check-canvas-2048t.md:town-yanqi"
+   ]
+  },
+  {
+   "name": "yanqi-mid",
+   "cam": [
+    435.196,
+    817.753,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "town",
+   "source": "analysis/live-check-canvas-2048t.md",
+   "label": "yanqi-mid",
+   "why": "焉耆中景",
+   "sets": [
+    "v20-precheck"
+   ],
+   "check": "ok",
+   "also_in": [
+    "analysis/live-check-canvas-2048l.md:yanqi",
+    "analysis/live-check-canvas-2048t.md:yanqi-mid"
+   ]
+  },
+  {
+   "name": "ailao-panel",
+   "cam": [
+    622.09,
+    469.38,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "other",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "ailao-panel",
+   "why": "哀牢地区临时转给曹操以展开面板；悬停城镇绿色图标显示“浓密丛林”，列出丛林地形对战役移动、军队补给等效果。原始查询在转属前已完成，未人工添加效果包。测试转属将…",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok"
+  },
+  {
+   "name": "battle-dingling-campaign",
+   "cam": [
+    765.597717,
+    999.261353,
+    36.812927,
+    0.0,
+    35.659245
+   ],
+   "group": "other",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "battle-dingling-campaign",
+   "why": "丁零战役对照：都城临河，北侧大湖，东侧岩柱山地及树林；河道绕城，部分斜截线可见。准备攻城，只进入部署。",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "note": "no requested camera in the result: cam is the actual camera the game reported"
+  },
+  {
+   "name": "battle-funan-campaign",
+   "cam": [
+    737.563599,
+    206.943054,
+    36.812897,
+    0.0,
+    31.421585
+   ],
+   "group": "other",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "battle-funan-campaign",
+   "why": "扶南战役对照：都城西侧为林地，河面从东侧绕行并向南接入三角洲；下游水面仍有浅色斜线。准备攻城，只进入部署。",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok",
+   "note": "no requested camera in the result: cam is the actual camera the game reported"
+  },
+  {
+   "name": "full-map-far",
+   "cam": [
+    683.2,
+    662.5,
+    867.6,
+    0.0,
+    1183.0
+   ],
+   "group": "other",
+   "source": "output/offline-view/v20-mesh-precheck/README.md",
+   "label": "full-map-far",
+   "why": "全图远景：有没有破洞、整体色调是否统一（默认高度雾会挡住全图，所以关雾、关景深渲染）",
+   "sets": [
+    "v20-precheck"
+   ],
+   "check": "ok (v20 precheck 2026-10-30)",
+   "opts": {
+    "hfog": false,
+    "fog_density": 0,
+    "dof": 0
+   }
+  },
+  {
+   "name": "mesh154-far",
+   "cam": [
+    318.0,
+    1188.9,
+    400.0,
+    0.0,
+    320.0
+   ],
+   "group": "other",
+   "source": "output/offline-view/v20-mesh-precheck/README.md",
+   "label": "mesh154-far",
+   "why": "land_mesh_154 far view",
+   "sets": [
+    "v20-precheck"
+   ],
+   "check": "ok (v20 precheck 2026-10-30)"
+  },
+  {
+   "name": "mesh154-mid",
+   "cam": [
+    335.13,
+    816.64,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "other",
+   "source": "output/offline-view/v20-mesh-precheck/README.md",
+   "label": "mesh154-mid",
+   "why": "land_mesh_154 mid view",
+   "sets": [
+    "v20-precheck"
+   ],
+   "check": "ok (v20 precheck 2026-10-30)"
+  },
+  {
+   "name": "mesh169-far",
+   "cam": [
+    1256.9,
+    1107.4,
+    320.0,
+    0.0,
+    256.0
+   ],
+   "group": "other",
+   "source": "output/offline-view/v20-mesh-precheck/README.md",
+   "label": "mesh169-far",
+   "why": "land_mesh_169 far view",
+   "sets": [
+    "v20-precheck"
+   ],
+   "check": "ok (v20 precheck 2026-10-30)"
+  },
+  {
+   "name": "mesh169-mid",
+   "cam": [
+    1244.31,
+    878.44,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "other",
+   "source": "output/offline-view/v20-mesh-precheck/README.md",
+   "label": "mesh169-mid",
+   "why": "land_mesh_169 mid view",
+   "sets": [
+    "v20-precheck"
+   ],
+   "check": "ok (v20 precheck 2026-10-30)"
+  },
+  {
+   "name": "startup-romance",
+   "cam": [
+    900.0,
+    650.0,
+    50.0,
+    0.0,
+    35.0
+   ],
+   "group": "other",
+   "source": "analysis/live-check-canvas-2048p-result.json",
+   "label": "startup-romance",
+   "why": "新开曹操190演义，第1回合正常进入战役地图；白天。",
+   "sets": [
+    "calib"
+   ],
+   "check": "ok"
+  }
+ ],
+ "changes": [
+  {
+   "name": "tundra-west",
+   "cam": [
+    340.248,
+    1363.539,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "branch": "feat/tundra-relief",
+   "source": "材质会话 via 总协调 2026-10-30",
+   "why": "苔原起伏和地面材质；border-north 作总览对照",
+   "compare": [
+    "border-north"
+   ],
+   "check": "ok (v20 thumbnail 2026-10-30)"
+  },
+  {
+   "name": "tundra-mid",
+   "cam": [
+    540.393,
+    1432.872,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "branch": "feat/tundra-relief",
+   "source": "材质会话 via 总协调 2026-10-30",
+   "why": "苔原起伏和地面材质；border-north 作总览对照",
+   "compare": [
+    "border-north"
+   ],
+   "check": "ok (v20 thumbnail 2026-10-30)",
+   "switches": [
+    "TW3K_TUNDRA_BAN",
+    "TW3K_TUNDRA_SCREE"
+   ],
+   "also_why": "浅黄褐碎斑明显减少，没有新的直边或大色块（TW3K_TUNDRA_BAN / TW3K_TUNDRA_SCREE）"
+  },
+  {
+   "name": "tundra-centre",
+   "cam": [
+    740.539,
+    1455.983,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "branch": "feat/tundra-relief",
+   "source": "材质会话 via 总协调 2026-10-30",
+   "why": "苔原起伏和地面材质；border-north 作总览对照",
+   "compare": [
+    "border-north"
+   ],
+   "check": "ok (v20 thumbnail 2026-10-30)",
+   "switches": [
+    "TW3K_TUNDRA_BAN",
+    "TW3K_TUNDRA_SCREE"
+   ],
+   "also_why": "浅黄褐碎斑明显减少，没有新的直边或大色块（TW3K_TUNDRA_BAN / TW3K_TUNDRA_SCREE）"
+  },
+  {
+   "name": "tundra-taiga",
+   "cam": [
+    1120.816,
+    1348.132,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "branch": "feat/tundra-relief",
+   "source": "材质会话 via 总协调 2026-10-30",
+   "why": "看苔原和泰加林的过渡（落在泰加林河谷，树密度约为 tundra-west 的 3.5 倍；总协调确认保留）",
+   "compare": [
+    "border-north"
+   ],
+   "check": "ok (v20 thumbnail 2026-10-30)"
+  },
+  {
+   "name": "snow-hulunbuir-near",
+   "cam": [
+    977.21,
+    929.68,
+    40.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-hulunbuir-far",
+   "cam": [
+    977.21,
+    929.68,
+    120.0,
+    0.0,
+    60.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-qiangtang-near",
+   "cam": [
+    445.16,
+    655.03,
+    40.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-qiangtang-far",
+   "cam": [
+    445.16,
+    655.03,
+    120.0,
+    0.0,
+    60.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "bogda-snow-near",
+   "cam": [
+    456.5,
+    848.4,
+    40.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "bogda-snow-far",
+   "cam": [
+    456.5,
+    848.4,
+    120.0,
+    0.0,
+    60.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-gongga-near",
+   "cam": [
+    670.99,
+    565.28,
+    40.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-gongga-far",
+   "cam": [
+    670.99,
+    565.28,
+    120.0,
+    0.0,
+    60.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-liaodong-edge-near",
+   "cam": [
+    1052.93,
+    799.48,
+    40.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-liaodong-edge-far",
+   "cam": [
+    1052.93,
+    799.48,
+    120.0,
+    0.0,
+    60.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-muztagh-near",
+   "cam": [
+    307.72,
+    748.25,
+    40.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-muztagh-far",
+   "cam": [
+    307.72,
+    748.25,
+    120.0,
+    0.0,
+    60.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main f29d9926",
+   "source": "总协调 2026-10-30",
+   "why": "雪遮罩：高峰全年白、其余冬季；离线渲染器画不出运行时雪后处理，评审用打包会话的遮罩裁图脚本",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-bogda-north",
+   "cam": [
+    456.332,
+    852.02,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main 664d741d",
+   "source": "总协调 2026-10-30（冬雪修正）",
+   "why": "冬季北坡厚雪 A≈.88、准噶尔盆地薄雪",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "snow-se-tibet",
+   "cam": [
+    570.415,
+    583.549,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "owner": "snow_bake",
+   "branch": "main 664d741d",
+   "source": "总协调 2026-10-30（冬雪修正）",
+   "why": "原方形满白消失、冬季薄雪 A≈.35–.4、峰顶全年白、无方块直边",
+   "review": "snow-mask-crop",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "arctic-northeast",
+   "cam": [
+    1134.7,
+    1328.8,
+    60.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "ground/props (diversity)",
+   "branch": "feat/arctic-treeline",
+   "source": "总协调 2026-10-31",
+   "why": "林线不再是直线；交错斑块在近景不成迷彩碎斑；勒拿/哈坦加河谷林舌（v22 起用）",
+   "from_version": "v22",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "arctic-northeast-near",
+   "cam": [
+    1134.7,
+    1328.8,
+    30.0,
+    0.0,
+    18.0
+   ],
+   "group": "frontier",
+   "owner": "ground/props (diversity)",
+   "branch": "feat/arctic-treeline",
+   "source": "总协调 2026-10-31",
+   "why": "林线不再是直线；交错斑块在近景不成迷彩碎斑；勒拿/哈坦加河谷林舌（v22 起用）",
+   "from_version": "v22",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "arctic-yenisei",
+   "cam": [
+    341.6,
+    1306.6,
+    60.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "ground/props (diversity)",
+   "branch": "feat/arctic-treeline",
+   "source": "总协调 2026-10-31",
+   "why": "林线不再是直线；交错斑块在近景不成迷彩碎斑；勒拿/哈坦加河谷林舌（v22 起用）",
+   "from_version": "v22",
+   "check": "pending-thumbnail",
+   "switches": [
+    "TW3K_TAIGA_DONOR"
+   ],
+   "also_why": "深色针叶林底带柔和斑驳，不应再有几 hex 大的浅绿岛（TW3K_TAIGA_DONOR）"
+  },
+  {
+   "name": "arctic-taimyr",
+   "cam": [
+    704.5,
+    1331.3,
+    60.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "ground/props (diversity)",
+   "branch": "feat/arctic-treeline",
+   "source": "总协调 2026-10-31",
+   "why": "林线不再是直线；交错斑块在近景不成迷彩碎斑；勒拿/哈坦加河谷林舌（v22 起用）",
+   "from_version": "v22",
+   "check": "pending-thumbnail",
+   "switches": [
+    "TW3K_TAIGA_DONOR"
+   ],
+   "also_why": "深色针叶林底带柔和斑驳，不应再有几 hex 大的浅绿岛（TW3K_TAIGA_DONOR）"
+  },
+  {
+   "name": "town-border-liaodong-dep",
+   "cam": [
+    1009.89,
+    802.72,
+    15.5,
+    0.0,
+    12.6
+   ],
+   "group": "town",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "看 A 方案：平台边缘那一圈细边是否消失、周围地面是否平顺过渡到邻城（辽东附属国都城，东北原版边界附近，平台抬升 .129 全图最大）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "town-border-saibei-pasture",
+   "cam": [
+    838.35,
+    748.39,
+    15.5,
+    0.0,
+    12.6
+   ],
+   "group": "town",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "看 A 方案：平台边缘那一圈细边是否消失、周围地面是否平顺过渡到邻城（塞北牧场，北面原版边界附近）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "town-plain-east-tianzhu",
+   "cam": [
+    491.26,
+    456.28,
+    15.5,
+    0.0,
+    12.6
+   ],
+   "group": "town",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "看 A 方案：平台边缘那一圈细边是否消失、周围地面是否平顺过渡到邻城（东天竺都城，恒河平原）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "town-plain-suoli",
+   "cam": [
+    1058.62,
+    891.74,
+    15.5,
+    0.0,
+    12.6
+   ],
+   "group": "town",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "看 A 方案：平台边缘那一圈细边是否消失、周围地面是否平顺过渡到邻城（索离都城，东北草原，周围起伏最小）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "lake-shore-bosten",
+   "cam": [
+    439.87,
+    809.66,
+    20.0,
+    0.0,
+    20.0
+   ],
+   "group": "lake",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "湖岸下界：岸上陆地格不再画成水，也不出现一圈台阶（岸边格 659,1050）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "lake-shore-lop-nur",
+   "cam": [
+    478.58,
+    779.6,
+    20.0,
+    0.0,
+    20.0
+   ],
+   "group": "lake",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "湖岸下界：岸上陆地格不再画成水，也不出现一圈台阶（岸边格 717,1011）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "lake-shore-aral",
+   "cam": [
+    130.16,
+    913.71,
+    20.0,
+    0.0,
+    20.0
+   ],
+   "group": "lake",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "湖岸下界：岸上陆地格不再画成水，也不出现一圈台阶（岸边格 195,1185）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "lake-shore-balkhash",
+   "cam": [
+    293.69,
+    880.95,
+    20.0,
+    0.0,
+    20.0
+   ],
+   "group": "lake",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "湖岸下界：岸上陆地格不再画成水，也不出现一圈台阶（岸边格 440,1143）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "scene-gumo-farm",
+   "cam": [
+    361.11,
+    832.8,
+    12.0,
+    0.0,
+    12.6
+   ],
+   "group": "town",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "场景落座：道具不埋地、不悬空（姑墨农田 2412，306 件，v21 −2.80）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "scene-wusun-lumber",
+   "cam": [
+    352.27,
+    812.97,
+    12.0,
+    0.0,
+    12.6
+   ],
+   "group": "town",
+   "owner": "整合审查 (details)",
+   "branch": "feat/mesh-bake-1 188ab323",
+   "source": "整合审查 2026-10-31",
+   "why": "场景落座：道具不埋地、不悬空（乌孙伐木场 1972/1973，35 件，v21 +.9）",
+   "from_version": "v21b",
+   "check": "pending-thumbnail"
+  },
+  {
+   "name": "arctic-yenisei-h20",
+   "cam": [
+    341.6,
+    1290.0,
+    30.0,
+    0.0,
+    18.0
+   ],
+   "group": "frontier",
+   "owner": "材质规则表·地面混合 (diversity)",
+   "switches": [
+    "TW3K_TAIGA_DONOR"
+   ],
+   "source": "diversity 2026-10-31（总协调要求）",
+   "why": "深色针叶林底带柔和斑驳，不应再有几 hex 大的浅绿岛（TW3K_TAIGA_DONOR）",
+   "from_version": "v22",
+   "check": "pending-thumbnail",
+   "ab_reference": "scratch:taiga-20261031/taiga-donor-AB-exact.png"
+  },
+  {
+   "name": "west-siberia-taiga",
+   "cam": [
+    300.0,
+    1180.0,
+    60.0,
+    0.0,
+    35.0
+   ],
+   "group": "frontier",
+   "owner": "材质规则表·地面混合 (diversity)",
+   "switches": [
+    "TW3K_TAIGA_DONOR"
+   ],
+   "source": "diversity 2026-10-31（总协调要求）",
+   "why": "深色针叶林底带柔和斑驳，不应再有几 hex 大的浅绿岛（TW3K_TAIGA_DONOR）",
+   "from_version": "v22",
+   "check": "pending-thumbnail",
+   "ab_reference": "scratch:taiga-20261031/taiga-donor-AB-exact.png"
+  },
+  {
+   "name": "tundra-mid-h30",
+   "cam": [
+    540.393,
+    1432.872,
+    30.0,
+    0.0,
+    20.0
+   ],
+   "group": "frontier",
+   "owner": "材质规则表·地面混合 (diversity)",
+   "switches": [
+    "TW3K_TUNDRA_BAN",
+    "TW3K_TUNDRA_SCREE"
+   ],
+   "source": "diversity 2026-10-31（总协调要求）",
+   "why": "浅黄褐碎斑明显减少，没有新的直边或大色块（TW3K_TUNDRA_BAN / TW3K_TUNDRA_SCREE）",
+   "from_version": "v22",
+   "check": "pending-thumbnail",
+   "ab_reference": "scratch:tundra-mid-20261031/tundra-scree-AB.png"
+  },
+  {
+   "name": "goguryeo",
+   "cam": [
+    1089.325,
+    764.572,
+    40.0,
+    0.0,
+    28.0
+   ],
+   "group": "frontier",
+   "owner": "材质规则表·地面混合 (diversity)",
+   "switches": [
+    "TW3K_KOREA_FORESTS"
+   ],
+   "source": "diversity 2026-10-31（总协调要求）",
+   "why": "林冠里有浅色阔叶和明暗层次，只有高处是深色冷杉（TW3K_KOREA_FORESTS；另改树种和非可玩格 hex 气候）",
+   "from_version": "v22",
+   "check": "pending-thumbnail",
+   "ab_reference": "scratch:goguryeo-20261031/korea-forests-AB.png"
+  },
+  {
+   "name": "goguryeo-60",
+   "cam": [
+    1089.325,
+    764.572,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "owner": "材质规则表·地面混合 (diversity)",
+   "switches": [
+    "TW3K_KOREA_FORESTS"
+   ],
+   "source": "diversity 2026-10-31（总协调要求）",
+   "why": "林冠里有浅色阔叶和明暗层次，只有高处是深色冷杉（TW3K_KOREA_FORESTS；另改树种和非可玩格 hex 气候）",
+   "from_version": "v22",
+   "check": "pending-thumbnail",
+   "ab_reference": "scratch:goguryeo-20261031/korea-forests-AB.png"
+  },
+  {
+   "name": "goguryeo-west",
+   "cam": [
+    1060.0,
+    760.0,
+    60.0,
+    0.0,
+    40.0
+   ],
+   "group": "frontier",
+   "owner": "材质规则表·地面混合 (diversity)",
+   "switches": [
+    "TW3K_KOREA_FORESTS"
+   ],
+   "source": "diversity 2026-10-31（总协调要求）",
+   "why": "林冠里有浅色阔叶和明暗层次，只有高处是深色冷杉（TW3K_KOREA_FORESTS；另改树种和非可玩格 hex 气候）",
+   "from_version": "v22",
+   "check": "pending-thumbnail",
+   "ab_reference": "scratch:goguryeo-20261031/korea-forests-AB.png"
+  },
+  {
+   "name": "korea-overview-v22",
+   "cam": [
+    1110.0,
+    730.0,
+    90.0,
+    0.0,
+    60.0
+   ],
+   "group": "frontier",
+   "owner": "材质规则表·地面混合 (diversity)",
+   "switches": [
+    "TW3K_KOREA_FORESTS"
+   ],
+   "source": "diversity 2026-10-31（总协调要求）",
+   "why": "林冠里有浅色阔叶和明暗层次，只有高处是深色冷杉（TW3K_KOREA_FORESTS；另改树种和非可玩格 hex 气候）",
+   "from_version": "v22",
+   "check": "pending-thumbnail",
+   "ab_reference": "scratch:goguryeo-20261031/korea-forests-AB.png"
+  },
+  {
+   "name": "bosten-real",
+   "cam": [
+    442.5,
+    812.2,
+    30.0,
+    0.0,
+    22.0
+   ],
+   "group": "lake",
+   "from_version": "v21e",
+   "branch": "feat/mesh-bake-1",
+   "owner": "integrator",
+   "why": "真博斯腾湖（焉耆东南）；固定集原 bosten 拍的是伊塞克湖（整合审查 10-31）"
+  }
+ ]
+}

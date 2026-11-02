@@ -1,0 +1,608 @@
+{
+ "about": "Per-design gameplay traits read by region_gameplay_db and check_town_positions (P5 prep, 2026-11-01): a design candidate ships its own copy beside its current-region-design.json.",
+ "province_classes": {
+  "oasis": [
+   "yiwu",
+   "shanshan",
+   "jushi_front",
+   "jushi_rear",
+   "pulei",
+   "beilu",
+   "danhuan",
+   "shanguo",
+   "yanqi",
+   "weili",
+   "weixu",
+   "qiuci",
+   "gumo",
+   "wensu",
+   "weitou",
+   "shule",
+   "yutian",
+   "shache",
+   "qiemo",
+   "jingjue",
+   "xiaowan",
+   "pishan",
+   "qule",
+   "ronglu",
+   "xiye",
+   "dayuan",
+   "dayuezhi",
+   "jibin"
+  ],
+  "han_frontier": [
+   "zhangye",
+   "jiuquan",
+   "dunhuang",
+   "juyan",
+   "wuyuan"
+  ],
+  "steppe": [
+   "xianbei_west",
+   "xianbei_centre",
+   "xianbei_east",
+   "mobei_xianbei",
+   "tuoba",
+   "dingling",
+   "jiankun",
+   "jinwei",
+   "wuhuan",
+   "wusun",
+   "kangju"
+  ],
+  "mountain": [
+   "puli",
+   "zihe",
+   "yinai",
+   "juandu",
+   "xiuxun",
+   "jieguo",
+   "xihai",
+   "zhuyai",
+   "daner",
+   "fa_qiang",
+   "tangmao",
+   "yangtong",
+   "guanghan_dependency",
+   "shu_dependency",
+   "jincheng_west"
+  ],
+  "northeast": [
+   "dongjing",
+   "fuyu",
+   "yilou",
+   "suoli",
+   "liaodong_dependency",
+   "okjeo",
+   "koguryo",
+   "xuantu"
+  ],
+  "peninsula": [
+   "lelang_north",
+   "lelang_south",
+   "yemaek",
+   "mahan",
+   "jinhan",
+   "byeonhan"
+  ],
+  "island": [
+   "zhouhu",
+   "wa_nu",
+   "yamatai",
+   "kunu",
+   "touma"
+  ],
+  "south_coast": [
+   "rinan",
+   "linyi",
+   "xitu",
+   "funan",
+   "dunxun"
+  ],
+  "south_inland": [
+   "shan_country",
+   "piaoyue",
+   "panyue",
+   "east_tianzhu",
+   "yilumo"
+  ],
+  "nanman": [
+   "pu"
+  ]
+ },
+ "rice_provinces": [
+  "byeonhan",
+  "jinhan",
+  "mahan"
+ ],
+ "walled_provinces": [
+  "byeonhan",
+  "fuyu",
+  "jinhan",
+  "koguryo",
+  "lelang_north",
+  "lelang_south",
+  "liaodong_dependency",
+  "rinan",
+  "xuantu",
+  "yamatai"
+ ],
+ "resource_overrides": {
+  "tw3k_hist_jibin_farm": {
+   "donor": "3k_main_penchang_resource_1",
+   "port": false,
+   "start_building": "tw3k_resource_earth_buddhist_temple_1",
+   "why": "Jibin / Gandhara: Buddhist centre under the Kushans",
+   "note": "Gandhara under the Kushans (Kanishka, 2nd century) was a centre of Buddhism. The only vanilla temple region (Pengcheng) is the building donor; its vanilla chain is shown as the Confucius temple, so the region uses the mod's Buddhist copy of the chain (buddhist_temple_db.py). Start building off unless TW3K_BUDDHIST_TEMPLE=1."
+  },
+  "tw3k_hist_rinan_lumber": {
+   "donor": "3k_main_youbeiping_resource_1",
+   "port": true,
+   "start_building": null,
+   "why": "Lurong, Rinan: the Han South Sea gateway (166 Da Qin embassy)",
+   "note": "Trading port once the town has a port slot (add_ports.py)."
+  },
+  "tw3k_hist_east_tianzhu_market": {
+   "donor": "3k_main_yulin_resource_1",
+   "port": true,
+   "start_building": null,
+   "why": "Tamralipti: the Ganges-mouth seaport, a river port here",
+   "note": "Trading port once the town has a port slot (add_ports.py)."
+  }
+ },
+ "town_sites": {
+  "tw3k_exp_saibei_farm": {
+   "lat": 37.34,
+   "lon": 111.18,
+   "confidence": "m",
+   "label": "中阳"
+  },
+  "tw3k_exp_nanjiang_capital": {
+   "lat": 24.07,
+   "lon": 105.05,
+   "confidence": "m",
+   "label": "句町 (广南)"
+  },
+  "tw3k_exp_nanjiang_pasture": {
+   "lat": 24.9,
+   "lon": 104.3,
+   "confidence": "l",
+   "label": "漏卧"
+  },
+  "tw3k_exp_nanjiang_lumber": {
+   "lat": 23.0,
+   "lon": 103.7,
+   "confidence": "l",
+   "label": "进乘"
+  },
+  "tw3k_hist_fuyu_capital": {
+   "lat": 43.84,
+   "lon": 126.55,
+   "confidence": "m",
+   "label": "夫余 (吉林)"
+  },
+  "tw3k_hist_yilou_capital": {
+   "lat": 44.4,
+   "lon": 129.5,
+   "confidence": "l",
+   "label": "挹娄 (牡丹江一带)"
+  },
+  "tw3k_hist_liaodong_dependency_capital": {
+   "lat": 41.53,
+   "lon": 121.24,
+   "confidence": "m",
+   "label": "昌辽 (义县)"
+  },
+  "tw3k_hist_liaodong_dependency_iron": {
+   "lat": 41.6,
+   "lon": 121.8,
+   "confidence": "m",
+   "label": "无虑 (北镇)"
+  },
+  "tw3k_hist_liaodong_dependency_lumber": {
+   "lat": 41.1,
+   "lon": 122.0,
+   "confidence": "l",
+   "label": "险渎 (台安)"
+  },
+  "tw3k_hist_zhangye_capital": {
+   "lat": 38.93,
+   "lon": 100.45,
+   "confidence": "h",
+   "label": "觻得 (张掖)"
+  },
+  "tw3k_hist_zhangye_pasture": {
+   "lat": 39.15,
+   "lon": 100.16,
+   "confidence": "h",
+   "label": "昭武 (临泽)"
+  },
+  "tw3k_hist_zhangye_iron": {
+   "lat": 38.78,
+   "lon": 101.08,
+   "confidence": "h",
+   "label": "删丹 (山丹)"
+  },
+  "tw3k_hist_zhangye_lumber": {
+   "lat": 38.43,
+   "lon": 100.82,
+   "confidence": "h",
+   "label": "氐池 (民乐)"
+  },
+  "tw3k_hist_jiuquan_capital": {
+   "lat": 39.73,
+   "lon": 98.5,
+   "confidence": "h",
+   "label": "福禄 (酒泉)"
+  },
+  "tw3k_hist_jiuquan_pasture": {
+   "lat": 40.28,
+   "lon": 97.05,
+   "confidence": "m",
+   "label": "玉门"
+  },
+  "tw3k_hist_jiuquan_iron": {
+   "lat": 40.0,
+   "lon": 98.9,
+   "confidence": "m",
+   "label": "会水 (金塔)"
+  },
+  "tw3k_hist_jiuquan_lumber": {
+   "lat": 39.38,
+   "lon": 99.82,
+   "confidence": "h",
+   "label": "表氏 (高台)"
+  },
+  "tw3k_hist_dunhuang_capital": {
+   "lat": 40.14,
+   "lon": 94.66,
+   "confidence": "h",
+   "label": "敦煌"
+  },
+  "tw3k_hist_dunhuang_pasture": {
+   "lat": 40.27,
+   "lon": 96.07,
+   "confidence": "m",
+   "label": "冥安 (锁阳城; was 40.52/95.78 = modern 瓜州 county town)  --- USR3 DUNHUANG PATCH ---"
+  },
+  "tw3k_hist_dunhuang_iron": {
+   "lat": 40.22,
+   "lon": 95.0,
+   "confidence": "l",
+   "label": "效谷 (east of 敦煌; was 40.30/95.20)  --- USR3 DUNHUANG PATCH ---"
+  },
+  "tw3k_hist_dunhuang_lumber": {
+   "lat": 39.93,
+   "lon": 94.06,
+   "confidence": "h",
+   "label": "龙勒 (阳关)"
+  },
+  "tw3k_hist_shanshan_lumber": {
+   "lat": 40.52,
+   "lon": 89.92,
+   "confidence": "m",
+   "label": "鄯善·盐场: Lop Nur salt crust by 楼兰 (Bosten review)"
+  },
+  "tw3k_hist_juyan_capital": {
+   "lat": 41.95,
+   "lon": 101.06,
+   "confidence": "h",
+   "label": "居延"
+  },
+  "tw3k_hist_rinan_capital": {
+   "lat": 16.75,
+   "lon": 107.1,
+   "confidence": "m",
+   "label": "西卷"
+  },
+  "tw3k_hist_rinan_lumber": {
+   "lat": 16.46,
+   "lon": 107.6,
+   "confidence": "m",
+   "label": "卢容 (顺化)"
+  },
+  "tw3k_hist_rinan_iron": {
+   "lat": 15.8,
+   "lon": 108.25,
+   "confidence": "m",
+   "label": "象林 (茶荞)"
+  },
+  "tw3k_hist_rinan_pasture": {
+   "lat": 17.3,
+   "lon": 106.7,
+   "confidence": "l",
+   "label": "朱吾"
+  },
+  "tw3k_hist_xianbei_centre_capital": {
+   "lat": 41.6,
+   "lon": 114.1,
+   "confidence": "l",
+   "label": "弹汗山"
+  },
+  "tw3k_hist_guanghan_dependency_capital": {
+   "lat": 33.0,
+   "lon": 104.5,
+   "confidence": "l",
+   "label": "甸氐道"
+  },
+  "tw3k_hist_guanghan_dependency_lumber": {
+   "lat": 32.94,
+   "lon": 104.68,
+   "confidence": "m",
+   "label": "阴平道 (文县)"
+  },
+  "tw3k_hist_shu_dependency_capital": {
+   "lat": 29.8,
+   "lon": 102.85,
+   "confidence": "h",
+   "label": "严道 (荥经)"
+  },
+  "tw3k_hist_shu_dependency_pasture": {
+   "lat": 30.06,
+   "lon": 102.75,
+   "confidence": "m",
+   "label": "徙 (天全)"
+  },
+  "tw3k_hist_shu_dependency_lumber": {
+   "lat": 29.35,
+   "lon": 102.65,
+   "confidence": "m",
+   "label": "旄牛 (汉源)"
+  },
+  "tw3k_hist_ailao_capital": {
+   "lat": 24.9,
+   "lon": 98.5,
+   "confidence": "l",
+   "label": "哀牢"
+  },
+  "tw3k_hist_ailao_farm": {
+   "lat": 25.46,
+   "lon": 99.54,
+   "confidence": "m",
+   "label": "博南 (永平)"
+  },
+  "tw3k_hist_shan_country_capital": {
+   "lat": 21.9,
+   "lon": 96.0,
+   "confidence": "l",
+   "label": "掸国"
+  },
+  "tw3k_hist_funan_capital": {
+   "lat": 10.25,
+   "lon": 105.15,
+   "confidence": "l",
+   "label": "扶南"
+  },
+  "tw3k_hist_linyi_capital": {
+   "lat": 15.0,
+   "lon": 108.8,
+   "confidence": "l",
+   "label": "象林徼外"
+  },
+  "tw3k_hist_zhouhu_capital": {
+   "lat": 33.4,
+   "lon": 126.5,
+   "confidence": "m",
+   "label": "州胡 (济州)"
+  },
+  "tw3k_hist_wa_nu_capital": {
+   "lat": 33.6,
+   "lon": 130.4,
+   "confidence": "m",
+   "label": "倭奴国 (福冈)"
+  },
+  "tw3k_hist_zhuyai_capital": {
+   "lat": 36.0,
+   "lon": 99.5,
+   "confidence": "l",
+   "label": "西羌 (青海湖南)"
+  },
+  "tw3k_hist_daner_capital": {
+   "lat": 31.0,
+   "lon": 99.5,
+   "confidence": "l",
+   "label": "白狼"
+  },
+  "tw3k_kr_lelang_north_capital": {
+   "site": "朝鲜县",
+   "lat": 38.995,
+   "lon": 125.77,
+   "confidence": "h",
+   "label": "朝鲜"
+  },
+  "tw3k_kr_lelang_north_farm": {
+   "site": "浿水县",
+   "lat": 39.4,
+   "lon": 125.6,
+   "confidence": "l",
+   "label": "浿水"
+  },
+  "tw3k_kr_lelang_north_fish": {
+   "site": "占蝉（粘蝉）县",
+   "lat": 38.95,
+   "lon": 125.2,
+   "confidence": "m",
+   "label": "占蝉"
+  },
+  "tw3k_kr_lelang_south_capital": {
+   "site": "带方县",
+   "lat": 38.47,
+   "lon": 125.8,
+   "confidence": "h",
+   "label": "带方"
+  },
+  "tw3k_kr_lelang_south_farm": {
+   "site": "屯有县",
+   "lat": 38.7,
+   "lon": 125.75,
+   "confidence": "h",
+   "label": "屯有"
+  },
+  "tw3k_kr_lelang_south_salt": {
+   "site": "昭明县",
+   "lat": 38.35,
+   "lon": 125.48,
+   "confidence": "m",
+   "label": "昭明"
+  },
+  "tw3k_kr_koguryo_capital": {
+   "site": "高句丽王都（国内城/丸都，集安）",
+   "lat": 41.13,
+   "lon": 126.18,
+   "confidence": "h",
+   "label": "国内城"
+  },
+  "tw3k_kr_koguryo_pasture": {
+   "site": "卒本（桓仁五女山城一带）",
+   "lat": 41.32,
+   "lon": 125.4,
+   "confidence": "h",
+   "label": "卒本"
+  },
+  "tw3k_kr_okjeo_capital": {
+   "site": "东沃沮（南沃沮）",
+   "lat": 39.92,
+   "lon": 127.54,
+   "confidence": "m",
+   "label": "东沃沮"
+  },
+  "tw3k_kr_okjeo_lumber": {
+   "site": "北沃沮（置沟娄）",
+   "lat": 42.3,
+   "lon": 130.0,
+   "confidence": "l",
+   "label": "北沃沮"
+  },
+  "tw3k_kr_yemaek_capital": {
+   "site": "不耐（东濊）",
+   "lat": 39.03,
+   "lon": 127.51,
+   "confidence": "m",
+   "label": "不耐"
+  },
+  "tw3k_kr_yemaek_fish": {
+   "site": "江陵濊",
+   "lat": 37.76,
+   "lon": 128.9,
+   "confidence": "m",
+   "label": "江陵濊"
+  },
+  "tw3k_kr_mahan_capital": {
+   "site": "目支国",
+   "lat": 36.88,
+   "lon": 127.17,
+   "confidence": "m",
+   "label": "目支国"
+  },
+  "tw3k_kr_mahan_rice": {
+   "site": "伯济国",
+   "lat": 37.531,
+   "lon": 127.12,
+   "confidence": "h",
+   "label": "伯济国"
+  },
+  "tw3k_kr_mahan_lumber": {
+   "site": "臣濆沽国",
+   "lat": 37.83,
+   "lon": 127.51,
+   "confidence": "m",
+   "label": "汉北国"
+  },
+  "tw3k_kr_mahan_south_rice": {
+   "site": "荣山江流域诸国（如不弥、新弥诸国）",
+   "lat": 34.91,
+   "lon": 126.66,
+   "confidence": "h",
+   "label": "荣山江诸国"
+  },
+  "tw3k_kr_jinhan_capital": {
+   "site": "斯卢国",
+   "lat": 35.833,
+   "lon": 129.224,
+   "confidence": "h",
+   "label": "斯卢国"
+  },
+  "tw3k_kr_jinhan_farm": {
+   "site": "已柢国",
+   "lat": 35.65,
+   "lon": 128.73,
+   "confidence": "l",
+   "label": "已柢国"
+  },
+  "tw3k_kr_jinhan_fish": {
+   "site": "勤耆国",
+   "lat": 36.1,
+   "lon": 129.34,
+   "confidence": "h",
+   "label": "勤耆国"
+  },
+  "tw3k_kr_byeonhan_capital": {
+   "site": "狗邪国",
+   "lat": 35.236,
+   "lon": 128.873,
+   "confidence": "h",
+   "label": "狗邪国"
+  },
+  "tw3k_kr_byeonhan_iron": {
+   "site": "安邪国",
+   "lat": 35.27,
+   "lon": 128.41,
+   "confidence": "h",
+   "label": "安邪国"
+  },
+  "tw3k_kr_byeonhan_fish": {
+   "site": "弁辰古资弥冻国",
+   "lat": 34.97,
+   "lon": 128.32,
+   "confidence": "m",
+   "label": "古资弥冻国"
+  },
+  "tw3k_rb_xuantu_capital": {
+   "site": "高句骊县（第三玄菟郡治）",
+   "lat": 41.865,
+   "lon": 123.915,
+   "confidence": "h",
+   "label": "高句骊"
+  },
+  "tw3k_rb_jincheng_west_capital": {
+   "site": "临羌（西平郡）",
+   "lat": 36.64,
+   "lon": 101.3,
+   "confidence": "m",
+   "label": "临羌"
+  },
+  "tw3k_rb_jincheng_west_livestock": {
+   "site": "破羌·牧地",
+   "lat": 36.47,
+   "lon": 102.56,
+   "confidence": "m",
+   "label": "破羌"
+  },
+  "tw3k_rb_jincheng_west_iron": {
+   "site": "安夷·矿场",
+   "lat": 36.5,
+   "lon": 102.1,
+   "confidence": "m",
+   "label": "安夷"
+  },
+  "tw3k_rb_wuyuan_capital": {
+   "site": "九原（五原郡）",
+   "lat": 40.58,
+   "lon": 109.82,
+   "confidence": "h",
+   "label": "九原"
+  },
+  "tw3k_rb_wuyuan_pasture": {
+   "site": "五原·牧地",
+   "lat": 41.072,
+   "lon": 109.707,
+   "confidence": "m",
+   "label": "五原·马场"
+  }
+ },
+ "notes": {
+  "rice_provinces": "Peninsula stems with paddy fields (Sanguozhi, Han zhuan: Byeonjin 'yi zhong wu gu ji dao'); old design: Mahan, Jinhan, Byeonhan.",
+  "town_sites": "(lat, lon) of named seats, approximate identifications; confidence h located, m probable, l rough region only. Western capitals come from plan_western_regions."
+ }
+}

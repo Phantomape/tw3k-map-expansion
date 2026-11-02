@@ -1,0 +1,25 @@
+# pip layer of the single tw3k environment (conda-forge CPython 3.14.9; env/create_tw3k_env.ps1).
+# Install with --no-deps: this list is the complete closure (pip check: clean on 2026-10-23).
+# Wheels: cp314-win_amd64 or py3-none-any; no sdists.
+beautifulsoup4==4.15.0
+certifi==2026.10.23
+charset-normalizer==3.5.2
+h5py==3.16.0
+idna==3.20
+lz4==4.4.5
+numpy==2.5.4
+pillow==13.0.0
+requests==2.34.2
+scipy==1.18.1
+soupsieve==3.0.4
+typing_extensions==4.16.0
+urllib3==2.8.0
+# GPU (CuPy for CUDA 13; driver must support CUDA 13.x). Optional: scripts/gpu_noise.py (polish blend
+# noise) falls back to the CPU without it; its kernel cache is <env>\tw3k-gpu-cache.
+cupy-cuda13x==14.2.0
+cuda-pathfinder==1.8.4
+nvidia-cuda-nvrtc==13.4.92
+nvidia-cuda-runtime==13.4.92
+# Open question: mods/general_expansion/scripts/{female_v07,refined_v04}.py import skimage
+# (scikit-image, only in an older base Anaconda, 0.19.3). Add a pinned scikit-image here if those
+# scripts must also move to this environment.
